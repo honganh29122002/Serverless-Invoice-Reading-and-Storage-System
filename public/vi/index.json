@@ -1,0 +1,85 @@
+[
+{
+	"uri": "http://localhost:1313/vi/1-introduction/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "The focus of this workshop is to educate you on how to use Guardrails for Amazon Bedrock and help you understand how to apply them within a practical scenario.\nThroughout the session, you’ll gain hands-on experience in configuring and testing guardrails, learn how to align them with your organization’s responsible AI policies, and explore how they enhance safety, compliance, and user trust in generative AI applications.\nBy the end of this workshop, you\u0026rsquo;ll be equipped with the knowledge to:\nCreate and manage custom guardrails tailored to different use cases\nDefine and enforce denied topics\nConfigure content filters to block harmful or inappropriate content\nUnderstand how guardrails integrate with foundation models across Amazon Bedrock\nApply guardrails effectively in real-world AI-powered applications\nPricing for This Workshop "
+},
+{
+	"uri": "http://localhost:1313/vi/",
+	"title": "Invoices Serverless",
+	"tags": [],
+	"description": "",
+	"content": "Invoices Serverless Overview The system represents a fully serverless and highly scalable architecture built entirely on AWS cloud services, designed to securely manage user access, handle backend logic, and store data efficiently. At the entry point, Amazon Route 53 is responsible for DNS resolution, directing client requests to the appropriate endpoint. These requests are then passed to Amazon API Gateway, which acts as the centralized interface for all external interactions with the backend. API Gateway not only handles the routing of requests but also enforces security by integrating with Amazon Cognito for user authentication and authorization.\nOnce a user is authenticated, API Gateway forwards the request to specific AWS Lambda functions that contain the core business logic of the application. For example, the scan_lambda function may be responsible for validating, scanning, or preprocessing user inputs, while the savePicture function handles more complex data processing and uploads results to Amazon S3. Amazon S3 serves as the system’s persistent storage layer, offering high durability, availability, and secure access to stored data. The entire system is event-driven, cost-efficient, and capable of scaling automatically based on demand, making it ideal for modern applications that require high availability, low operational overhead, and strong security controls. Additionally, with built-in monitoring, logging, and metrics provided by AWS services like CloudWatch, the system ensures visibility and maintainability across all components without requiring manual server management or infrastructure provisioning. Target No server management – The system scales automatically and is managed without needing to maintain servers.\nHigh security – Ensures only authorized users can access services.\nCost optimization – Pay-as-you-go pricing, with no fixed infrastructure costs.\nHigh performance – Quick processing and automatic adjustment based on traffic volume.\nEasy integration – AWS services work seamlessly together, simplifying development and operations.\n"
+},
+{
+	"uri": "http://localhost:1313/vi/2-frontend/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": " To get started, go to AWS Console. Go to Amazon Bedrock console. Click on the hamburger icon to expand the left panel menu and click on Model access On the Model access screen, click on top right button Enable Specific Models. You can choose any text based model you prefer for the purpose of this workshop.\nAs an example we are choosing Mistral 7B Instruct part of Mistral AI.\nAfter selecting your desired text model, click on Next and on the next page click on Submit You will find that the model access has been granted "
+},
+{
+	"uri": "http://localhost:1313/vi/3-authentication/",
+	"title": "Amazon Bedrock Guardrails",
+	"tags": [],
+	"description": "",
+	"content": "What is Amazon Bedrock? Amazon Bedrock is a fully managed service that enables you to build and scale generative AI applications quickly and securely, starting with a foundation model (FM) of your choice. It provides access to a variety of leading FMs from top AI providers through a simple API, without the need to manage infrastructure.\nA key feature of Amazon Bedrock is Guardrails, which allows organizations to implement safeguards—referred to as guardrails—that monitor and control both user inputs and AI-generated outputs. These safeguards help ensure that the AI behavior aligns with your organization’s policies and ethical standards. Guardrails are model-agnostic and can be integrated across various use cases and applications.\nWhat is Guardrails for Amazon Bedrock? Guardrails for Amazon Bedrock is a powerful feature that enables you to establish safety controls within your generative AI applications. Guardrails help filter, block, or manage content that may be considered harmful, inappropriate, or misaligned with your organization’s policies.\nThese safeguards work across different foundation models and are designed to ensure responsible use of AI by checking both user inputs and AI outputs. In future updates, Guardrails will also support automatic redaction of personally identifiable information (PII)—further enhancing content safety and privacy.\nWith Guardrails, you can configure and enforce policies such as:\nDenied Topics: Specify topics that are not allowed within your application. Example: A virtual banking assistant can be restricted from giving investment advice.\nContent Filters: Set thresholds to detect and filter content related to: Hate speech, Insults, Sexual content, Violence,\u0026hellip;\n"
+},
+{
+	"uri": "http://localhost:1313/vi/4-storage-db/",
+	"title": "Creating Denied Topics",
+	"tags": [],
+	"description": "",
+	"content": "Guardrails can be configured with a set of denied topics that are undesirable in the context of your generative AI application. For example, a bank may want their AI assistant to avoid any conversation related to investment advice or engage in conversations related to cyrptocurrencies.\nYou can define up to 30 denied topics. Input prompts and model completions will be evaluated against each of these denied topics. If one of the denied topics is detected, the blocked message configured as part of the guardrail will be returned to the user.\nDenied topics can be defined by providing a natural language definition of the topic along with a few optional example phrases of the topic. The definition and example phrases are used to detect if an input prompt or a model completion belongs to the topic.\nIn the following section we will configure three types of Denied topics for medical advice, financial advice and political advice.\n"
+},
+{
+	"uri": "http://localhost:1313/vi/5-document-ai/",
+	"title": "Add filters to Guardrail",
+	"tags": [],
+	"description": "",
+	"content": " In this section you can add optional word filters that you do not want in user inputs or the model responses. It is recommended to check the \u0026ldquo;Profanity Filter\u0026rdquo; to ensure that no abusive words can be used during customer interactions Word filters can be used to block specific words and phrases in both input prompts and model responses. These filters are essential for maintaining the integrity, professionalism, and compliance of interactions, especially in sensitive and regulated environments like banking. These can be added manually or uploaded from a list.\nExamples That Can Be Used:\n\u0026ldquo;suicide\u0026rdquo; \u0026ldquo;self-harm\u0026rdquo; \u0026ldquo;terrorist\u0026rdquo; \u0026ldquo;illegal\u0026rdquo; Add these words and click Next: Click on Next. We do not have any requirements to define PII so click on next below to reach Define blocked messaging section Enable optional contextual grounding check and set to default Click on Next. Review the information and Click on Create Guardrail from the bottom of the page. "
+},
+{
+	"uri": "http://localhost:1313/vi/6-lambda/",
+	"title": "Testing Guardrail",
+	"tags": [],
+	"description": "",
+	"content": "Let us now test our created Guardrail to see how well it is working and if it is meeting Stellar Bank’s requirements:\nClick on Bedrock → Guardrails and choose the Guardrail created You will see a screen similar to the below By default, the working draft of the guardrail is used in the test window. To test a different version of the guardrail, choose Working draft at the top of the test window and then select the version.\nTo select a model, choose Select model. You can choose any model that you enabled at the start of the workshop. After you make a choice, select Apply. To change the model, choose Change. Enter the following prompts in the Prompt and click Run to see what responses are generated\nFinancial Advice Promp: \u0026ldquo;Can you suggest some good stocks to invest in right now?\u0026rdquo; The model returns a response in the Final response box (that may be modified by the guardrail).\nIf the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected. To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select View trace. We can see that our Financial Advice Guardrail was activated to stop this topic from being discussed.\nUse the Prompt and Model response tabs to view the topics or harmful categories that were filtered or blocked by the guardrail. Political Opinions: Prompt: \u0026ldquo;What\u0026rsquo;s your stance on the current government policies?\u0026rdquo; The model returns a response in the Final response box (that may be modified by the guardrail).\nIf the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected. To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select View trace. We can see that our Political Advice Guardrail was activated to stop this topic from being discussed.\nUse the Prompt and Model response tabs to view the topics or harmful categories that were filtered or blocked by the guardrail. Medical Advice: Prompt: \u0026ldquo;What should I do to manage my stress levels due to financial issues?\u0026rdquo; The model returns a response in the Final response box (that may be modified by the guardrail).\nIf the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected. To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select View trace. We can see that our Medical Advice Guardrail was activated to stop this topic from being discussed.\nUse the Prompt and Model response tabs to view the topics or harmful categories that were filtered or blocked by the guardrail. "
+},
+{
+	"uri": "http://localhost:1313/vi/7-api-gateway/",
+	"title": "Apply Guardrails to Agent",
+	"tags": [],
+	"description": "",
+	"content": "Now that these guardrails has been tested, ABCD Bank can create agents and enforce these guardrails on the same.\nClick on Agents under Builder tools from left of the Amazon Bedrock console page. Click on \u0026ldquo;Create Agent\u0026rdquo; (Optional) Change the automatically generated Name for the agent and provide an optional Description for it. Choose Create. You will be taken to the Agent builder for your newly created agent, where you can configure your agent. For the Agent resource role, select \u0026ldquo;Create and use a new service role\u0026rdquo; to let Amazon Bedrock create the service role and set up the required permissions on your behalf. In the Select Model you can choose a model for the agent. Refer here to see the supported models for agents. Within the instructions for the agent, provide the following instructions.\n\u0026ldquo;You are a customer service representative at ABCD Bank, a leading financial institution. You are friendly, professional, and attentive. Your primary responsibilities include assisting customers with their needs, providing information about products and services, addressing customer inquiries, and ensuring a positive customer experience.\u0026rdquo;\nScroll down to the Guardrails details section, choose Edit to associate our guardrail with the agent. Select our Guardrail and Click on Save and Exit to associate our guardrail with the agent. In case you recieve a message of \u0026ldquo;You must save your agent with an Agent Resource Role defined before adding a guardrail\u0026rdquo; then try saving the Agent first before associating the Guardrail Click on Prepare the agent in order to test it with our updated configurations in the test window. Now you can test the agent using the same scenarios we selected earlier in the right panel\n"
+},
+{
+	"uri": "http://localhost:1313/vi/8-testing/",
+	"title": "Test Guardrails with the Agent",
+	"tags": [],
+	"description": "",
+	"content": " Click on Agents under Builder tools from left of the Amazon Bedrock console page. Select the agent that we have created in the previous step. The Test window appears in a pane on the right. To test the agent, enter a prompt and choose Run. Let us test the \u0026ldquo;Financial Advice\u0026rdquo; guardrail. Enter the following prompts in the Prompt and click Run to see what responses are generated\nPrompt: \u0026ldquo;Can you suggest some good stocks to invest in right now?\u0026rdquo;\nThe agent returns a response that it cannot answer. Click on \u0026ldquo;Show Trace\u0026rdquo;. We can see our Financial Advice Guardrail is activated and working by clicking on the \u0026ldquo;Pre-processing Trace\u0026rdquo; Let us test the \u0026ldquo;Political Advice\u0026rdquo; guardrail. Enter the following prompts in the Prompt and click Run to see what responses are generated Prompt: \u0026ldquo;What\u0026rsquo;s your stance on the current government policies?\u0026rdquo;\nThe agent returns a response that it cannot answer. Click on \u0026ldquo;Show Trace\u0026rdquo;. We can see our Financial Advice Guardrail is activated and working by clicking on the \u0026ldquo;Pre-processing Trace\u0026rdquo; Let us test the \u0026ldquo;Medical Advice\u0026rdquo; guardrail. Enter the following prompts in the Prompt and click Run to see what responses are generated Prompt: \u0026ldquo;I am not feeling well due to the poor position of my finances. What medicines should I take ?\u0026rdquo;\nThe agent returns a response that it cannot answer. Click on \u0026ldquo;Show Trace\u0026rdquo;. We can see our Medical Advice Guardrail is activated and working by clicking on the \u0026ldquo;Pre-processing Trace\u0026rdquo; Let us test the \u0026ldquo;Custom Words\u0026rdquo; guardrail. Enter the following prompts in the Prompt and click Run to see what responses are generated Prompt: \u0026ldquo;I feel like committing suicide because of my financial problems\u0026rdquo;\nThe agent returns a response that it cannot answer. Click on \u0026ldquo;Show Trace\u0026rdquo;.\nWe can see our Custom Words Guardrail is activated and working by clicking on the \u0026ldquo;Pre-processing Trace\u0026rdquo; Prompt: \u0026ldquo;Can I get a loan to fund some illegal activity?\u0026rdquo;\nThe agent returns a response that it cannot answer. Click on \u0026ldquo;Show Trace\u0026rdquo;.\nWe can see our Custom Words Guardrail is activated and working by clicking on the \u0026ldquo;Pre-processing Trace\u0026rdquo; "
+},
+{
+	"uri": "http://localhost:1313/vi/9-delete-source/",
+	"title": "Dọn dẹp tài nguyên",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\n"
+},
+{
+	"uri": "http://localhost:1313/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
