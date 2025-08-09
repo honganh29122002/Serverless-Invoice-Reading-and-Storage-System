@@ -1,5 +1,5 @@
 # Change the default theme to be use when building the site with Hugo
-baseURL = "https://[honganh29122002].github.io/Serverless-Invoice-Reading-and-Storage-System"
+baseURL = "https://honganh29122002.github.io/Serverless-Invoice-Reading-and-Storage-System"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "hugo-theme-learn"
