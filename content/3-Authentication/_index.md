@@ -20,13 +20,14 @@ Amazon Cognito serves as the central authentication and user management service 
 
 ### Step 2: Configure Application Settings
 
+   ![cog1](/images/3/cog1.png?width=90pc)
 - **Application type**: Single-page application
 - **Application name**: Enter your application name
 - **Sign-in options**: Username
-- **Return URL**: Enter your application URL
 
-   ![cog1](/images/3/cog1.png?width=90pc)
    ![cog2](/images/3/cog2.png?width=90pc)
+- **Return URL**: Enter your application URL
+- **Required attributes for sign-up**: email
    ![cog3](/images/3/cog3.png?width=90pc)
 
 ### Step 3: Access Login Interface
@@ -39,27 +40,29 @@ Amazon Cognito serves as the central authentication and user management service 
 ### Step 4: Save Configuration Details
 
 **Important**: Record the following values for application integration:
-- **User Pool ID**
-- **Client ID**
-
+ - **User Pool ID**
    ![cog5](/images/3/cog5.png?width=90pc)
+ - **Client ID**
    ![cog6](/images/3/cog6.png?width=90pc)
 
 ### Step 5: Create Test User Account
 
 1. Create a new user account for testing
-2. Complete the registration process
 
    ![cog7](/images/3/cog7.png?width=90pc)
+2. Complete the registration process
+
    ![cog8](/images/3/cog8.png?width=90pc)
+
 
 ### Step 6: Verify Authentication
 
 1. Log in using the created credentials
 2. Verify successful authentication
-
+- Enter the username and password you set up earlier.
    ![cog9](/images/3/cog9.png?width=90pc)
    ![cog10](/images/3/cog10.png?width=90pc)
+- Change password and confirm
    ![cog11](/images/3/cog11.png?width=90pc)
 
 ### Step 7: Confirm User Status
@@ -68,3 +71,17 @@ Amazon Cognito serves as the central authentication and user management service 
 - User is now ready for application access
 
    ![cog12](/images/3/cog12.png?width=90pc)
+
+---
+
+## Continue to
+
+[4. Storage & Database](../4-storage-db/)
+
+---
+
+## References
+
+- [Amazon Cognito Documentation](https://docs.aws.amazon.com/cognito/)
+- [Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
+- [Authentication Best Practices](https://docs.aws.amazon.com/cognito/latest/developerguide/security.html)

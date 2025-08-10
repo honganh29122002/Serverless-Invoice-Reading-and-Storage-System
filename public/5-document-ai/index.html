@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Document AI :: Amazon Bedrock Guardrails</title>
+    <title>Document AI :: Serverless Invoice Reading and Storage System</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819602" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819602" rel="stylesheet">
+    <link href="/css/theme.css?1754819602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819602" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819602" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819602"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819602"></script>
 
     
   </div>
@@ -432,6 +432,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10-conclusion/">
+          <b>10. </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -519,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -527,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -594,16 +620,11 @@
         <li><a href="#applications-in-invoice-processing">Applications in Invoice Processing</a></li>
       </ul>
     </li>
-    <li><a href="#overall-processing-workflow">Overall Processing Workflow</a>
-      <ul>
-        <li><a href="#step-1-document-ingestion">Step 1: Document Ingestion</a></li>
-        <li><a href="#step-2-data-extraction-textract">Step 2: Data Extraction (Textract)</a></li>
-        <li><a href="#step-3-intelligent-analysis-bedrock">Step 3: Intelligent Analysis (Bedrock)</a></li>
-        <li><a href="#step-4-result-storage">Step 4: Result Storage</a></li>
-      </ul>
-    </li>
+    <li><a href="#amazon-textract-workflow">Amazon Textract Workflow</a></li>
+    <li><a href="#amazon-bedrock-workflow">Amazon Bedrock Workflow</a></li>
     <li><a href="#benefits-of-serverless-architecture">Benefits of Serverless Architecture</a></li>
     <li><a href="#reference-documentation">Reference Documentation</a></li>
+    <li><a href="#continue-to">Continue to</a></li>
   </ul>
 </nav>
     </div>
@@ -712,32 +733,41 @@
 <li><strong>Data Privacy</strong>: Protects customer and vendor information</li>
 <li><strong>Quality Control</strong>: Ensures quality and appropriate output</li>
 </ul>
-<h2 id="overall-processing-workflow">Overall Processing Workflow</h2>
-<h3 id="step-1-document-ingestion">Step 1: Document Ingestion</h3>
-<ul>
-<li>Invoices are uploaded to S3</li>
-<li>Lambda function is automatically triggered</li>
-<li>Validation and preprocessing</li>
-</ul>
-<h3 id="step-2-data-extraction-textract">Step 2: Data Extraction (Textract)</h3>
-<ul>
-<li>Textract analyze_expense API is called</li>
-<li>Extracts structured data from invoices</li>
-<li>Confidence scores for each field</li>
-</ul>
-<h3 id="step-3-intelligent-analysis-bedrock">Step 3: Intelligent Analysis (Bedrock)</h3>
-<ul>
-<li>Data from Textract is sent to Claude 3 Haiku</li>
-<li>AI analyzes, verifies, and generates insights</li>
-<li>Guardrails ensure safe output</li>
-</ul>
-<h3 id="step-4-result-storage">Step 4: Result Storage</h3>
-<ul>
-<li>Results are formatted and stored</li>
-<li>Metadata and audit trail</li>
-<li>Integration with downstream systems</li>
-</ul>
-<h2 id="benefits-of-serverless-architecture">Benefits of Serverless Architecture</h2>
+<h2 id="amazon-textract-workflow">Amazon Textract Workflow</h2>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB
+    A[User/Client] --&gt; B[AWS Amplify Frontend]
+    B --&gt; C[Amazon API Gateway]
+    C --&gt; D[AWS Lambda Upload Handler]
+    D --&gt; E[Amazon S3 File Storage]
+    E --&gt; F[AWS Lambda Textract Handler]
+    F --&gt; G[Amazon Textract Document Analysis]
+    G --&gt; H[Amazon DynamoDB Extracted Data]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#fff3e0
+    style G fill:#e0f2f1
+    style H fill:#f1f8e9
+</code></pre><h2 id="amazon-bedrock-workflow">Amazon Bedrock Workflow</h2>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB
+    A[User/Client] --&gt; B[AWS Amplify Frontend]
+    B --&gt; C[Amazon API Gateway]
+    C --&gt; D[AWS Lambda Bedrock Handler]
+    D --&gt; E[Amazon DynamoDB Get Textract Data]
+    E --&gt; F[Amazon Bedrock Claude 3 Haiku]
+    F --&gt; G[Amazon DynamoDB AI Analysis Result]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#f1f8e9
+    style F fill:#ffebee
+    style G fill:#f1f8e9
+</code></pre><h2 id="benefits-of-serverless-architecture">Benefits of Serverless Architecture</h2>
 <p><strong>1. Scalability</strong></p>
 <ul>
 <li>Automatically scales with demand</li>
@@ -769,6 +799,8 @@
 <li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-3.html">Claude 3 Haiku Model Guide</a></li>
 </ul>
 <hr>
+<h2 id="continue-to">Continue to</h2>
+<p><a href="/6-lambda/">6. Lambda Functions</a></p>
 
 
 
@@ -1021,6 +1053,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -1043,19 +1091,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819602"></script>
+    <script src="/js/jquery.sticky.js?1754819602"></script>
+    <script src="/js/featherlight.min.js?1754819602"></script>
+    <script src="/js/highlight.pack.js?1754819602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819602"></script>
+    <script src="/js/learn.js?1754819602"></script>
+    <script src="/js/hugo-learn.js?1754819602"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

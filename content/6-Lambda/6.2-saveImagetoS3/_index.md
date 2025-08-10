@@ -1,7 +1,7 @@
 +++
 title = "Save Picture to S3"
 date = 2024-05-14T00:38:32+07:00
-weight = 7
+weight = 2
 chapter = false
 pre = "<b>6.2 </b>"
 +++
@@ -93,3 +93,6 @@ def lambda_handler(event, context):
     ]
 }
 ```
+---
+**Continue to**:
+[6.3 Interact with textract](../6.3-withTextract/)

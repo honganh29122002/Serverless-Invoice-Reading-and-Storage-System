@@ -1,7 +1,7 @@
 +++
 title = "Interact with bedrock"
 date = 2024-05-14T00:38:32+07:00
-weight = 9
+weight = 4
 chapter = false
 pre = "<b>6.4 </b>"
 +++
@@ -162,3 +162,7 @@ def lambda_handler(event, context):
     ]
 }
 ```
+
+ ---
+**Continue to**:
+[7. API Gateway Configuration](../../7-API%20Gateway/)

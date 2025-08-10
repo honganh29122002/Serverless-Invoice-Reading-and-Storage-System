@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Apply Guardrails to Agent :: Amazon Bedrock Guardrails</title>
+    <title>Cấu Hình API Gateway :: Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819602" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819602" rel="stylesheet">
+    <link href="/css/theme.css?1754819602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819602" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819602" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819602"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819602"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduction/" title="Giới Thiệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Giới Thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/2-frontend/" title="Getting Started" class="dd-item 
+    <li data-nav-id="/vi/2-frontend/" title="Frontend" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-frontend/">
-          <b>2. </b>Getting Started
+          <b>2. </b>Frontend
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/vi/3-authentication/" title="Amazon Bedrock Guardrails" class="dd-item 
+    <li data-nav-id="/vi/3-authentication/" title="Xác Thực" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-authentication/">
-          <b>3. </b>Amazon Bedrock Guardrails
+          <b>3. </b>Xác Thực
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,13 @@
  
   
     
-    <li data-nav-id="/vi/4-storage-db/" title="Creating Denied Topics" class="dd-item 
+    <li data-nav-id="/vi/4-storage-db/" title="Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/4-storage-db/">
-          <b>4. </b>Creating Denied Topics
+          <b>4. </b>Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/vi/5-document-ai/" title="Add filters to Guardrail" class="dd-item 
+    <li data-nav-id="/vi/5-document-ai/" title="Document AI" class="dd-item 
         
         
         
         ">
       <a href="/vi/5-document-ai/">
-          <b>5. </b>Add filters to Guardrail
+          <b>5. </b>Document AI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,18 +212,142 @@
  
   
     
-    <li data-nav-id="/vi/6-lambda/" title="Testing Guardrail" class="dd-item 
+    <li data-nav-id="/vi/6-lambda/" title="Cấu Hình Lambda" class="dd-item 
         
         
         
         ">
       <a href="/vi/6-lambda/">
-          <b>6. </b>Testing Guardrail
+          <b>6. </b>Cấu Hình Lambda
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.1-scandb/" title="Lấy Dữ Liệu Từ DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.1-scandb/">
+          <b>6.1 </b>Lấy Dữ Liệu Từ DB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.2-saveimagetos3/" title="Lưu Hình Ảnh Vào S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.2-saveimagetos3/">
+          <b>6.2 </b>Lưu Hình Ảnh Vào S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.3-withtextract/" title="Tương Tác Với Textract" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.3-withtextract/">
+          <b>6.3 </b>Tương Tác Với Textract
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.4-withbedrock/" title="Tương Tác Với Bedrock" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.4-withbedrock/">
+          <b>6.4 </b>Tương Tác Với Bedrock
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -238,13 +362,13 @@
  
   
     
-    <li data-nav-id="/vi/7-api-gateway/" title="Apply Guardrails to Agent" class="dd-item 
+    <li data-nav-id="/vi/7-api-gateway/" title="Cấu Hình API Gateway" class="dd-item 
         
         active
         
         ">
       <a href="/vi/7-api-gateway/">
-          <b>7. </b>Apply Guardrails to Agent
+          <b>7. </b>Cấu Hình API Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -264,13 +388,13 @@
  
   
     
-    <li data-nav-id="/vi/8-testing/" title="Test Guardrails with the Agent" class="dd-item 
+    <li data-nav-id="/vi/8-testing/" title="Kiểm Thử Ứng Dụng" class="dd-item 
         
         
         
         ">
       <a href="/vi/8-testing/">
-          <b>8. </b>Test Guardrails with the Agent
+          <b>8. </b>Kiểm Thử Ứng Dụng
           
             <i class="fas fa-check read-icon"></i>
           
@@ -290,13 +414,39 @@
  
   
     
-    <li data-nav-id="/vi/9-delete-source/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/vi/9-delete-source/" title="Dọn Dẹp Tài Nguyên" class="dd-item 
         
         
         
         ">
       <a href="/vi/9-delete-source/">
-          <b>9. </b>Dọn dẹp tài nguyên
+          <b>9. </b>Dọn Dẹp Tài Nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/10-conclusion/" title="Kết Luận" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/10-conclusion/">
+          <b>10. </b>Kết Luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -395,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -403,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -443,7 +593,7 @@
             
           
           
-            <a href='/vi/'>Invoices Serverless</a> > Apply Guardrails to Agent
+            <a href='/vi/'>Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</a> > Cấu Hình API Gateway
           
         
           
@@ -454,7 +604,30 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tổng-quan-api-gateway">Tổng Quan API Gateway</a>
+      <ul>
+        <li><a href="#chức-năng-cốt-lõi">Chức Năng Cốt Lõi</a></li>
+        <li><a href="#vai-trò-kiến-trúc">Vai Trò Kiến Trúc</a></li>
+      </ul>
+    </li>
+    <li><a href="#cấu-hình-api">Cấu Hình API</a>
+      <ul>
+        <li><a href="#api-lưu-trữ-và-xử-lý-hóa-đơn">API Lưu Trữ và Xử Lý Hóa Đơn</a></li>
+        <li><a href="#api-truy-xuất-dữ-liệu">API Truy Xuất Dữ Liệu</a></li>
+      </ul>
+    </li>
+    <li><a href="#thực-hành-tốt-nhất">Thực Hành Tốt Nhất</a>
+      <ul>
+        <li><a href="#bảo-mật">Bảo Mật</a></li>
+        <li><a href="#hiệu-suất">Hiệu Suất</a></li>
+        <li><a href="#giám-sát">Giám Sát</a></li>
+      </ul>
+    </li>
+    <li><a href="#tiếp-tục">Tiếp tục</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -470,7 +643,7 @@
           
             <h1>
               
-              Apply Guardrails to Agent
+              Cấu Hình API Gateway
             </h1>
           
 
@@ -478,47 +651,175 @@
 
 
 
-	<p>Now that these guardrails has been tested, ABCD Bank can create agents and enforce these guardrails on the same.</p>
+	<p>Phần này bao gồm việc thiết lập API Gateway để tạo các REST API an toàn, có thể mở rộng kết nối ứng dụng frontend với các hàm Lambda backend.</p>
+<h2 id="tổng-quan-api-gateway">Tổng Quan API Gateway</h2>
+<h3 id="chức-năng-cốt-lõi">Chức Năng Cốt Lõi</h3>
+<p><strong>1. Quản Lý Yêu Cầu</strong></p>
+<ul>
+<li>Đóng vai trò là điểm vào duy nhất cho tất cả các yêu cầu của client</li>
+<li>Quản lý giao tiếp giữa frontend và các dịch vụ backend</li>
+<li>Cung cấp xử lý yêu cầu/phản hồi tập trung</li>
+</ul>
+<p><strong>2. Định Tuyến Yêu Cầu</strong></p>
+<ul>
+<li>Định tuyến các yêu cầu HTTP/HTTPS đến các dịch vụ backend phù hợp</li>
+<li>Chỉ đạo yêu cầu đến các hàm Lambda cụ thể dựa trên endpoints</li>
+<li>Hỗ trợ nhiều loại tích hợp (Lambda, HTTP, dịch vụ AWS)</li>
+</ul>
+<p><strong>3. Tích Hợp Bảo Mật</strong></p>
+<ul>
+<li>Tích hợp với Amazon Cognito để xác thực</li>
+<li>Hỗ trợ OAuth2 và ủy quyền tùy chỉnh</li>
+<li>Cung cấp quản lý API key và throttling</li>
+</ul>
+<h3 id="vai-trò-kiến-trúc">Vai Trò Kiến Trúc</h3>
+<p>Trong kiến trúc serverless của chúng ta, API Gateway đóng vai trò là lớp điều phối:</p>
+<ul>
+<li>Nhận yêu cầu từ ứng dụng frontend</li>
+<li>Định tuyến yêu cầu quét dữ liệu đến hàm <strong>Database Scanner</strong></li>
+<li>Chỉ đạo yêu cầu upload đến hàm <strong>Image Upload Handler</strong></li>
+<li>Kết nối với hàm <strong>Textract Integration</strong> để xử lý tài liệu</li>
+<li>Liên kết với hàm <strong>Bedrock Integration</strong> để phân tích AI</li>
+<li>Quản lý xác thực thông qua tích hợp Cognito</li>
+</ul>
+<h2 id="cấu-hình-api">Cấu Hình API</h2>
+<h3 id="api-lưu-trữ-và-xử-lý-hóa-đơn">API Lưu Trữ và Xử Lý Hóa Đơn</h3>
+<h4 id="bước-1-tạo-rest-api">Bước 1: Tạo REST API</h4>
 <ol>
 <li>
-<p>Click on Agents under Builder tools from left of the Amazon Bedrock console page.
-<img src="/images/7/img.png?width=90pc" alt="img"></p>
+<p>Điều hướng đến <a href="https://ap-southeast-1.console.aws.amazon.com/apigateway/main/welcome?api=unselected&amp;region=ap-southeast-1">Amazon API Gateway Console</a></p>
+<p><img src="/images/7/api1.png?width=90pc" alt="api1"></p>
 </li>
 <li>
-<p>Click on <strong>&ldquo;Create Agent&rdquo;</strong>
-<img src="/images/7/img_1.png?width=90pc" alt="img_1"></p>
-</li>
-<li>
-<p>(Optional) Change the automatically generated Name for the agent and provide an optional Description for it. Choose <strong>Create</strong>. You will be taken to the Agent builder for your newly created agent, where you can configure your agent.
-<img src="/images/7/Agent3.png?width=90pc" alt="Agent3"></p>
-</li>
-<li>
-<p>For the Agent resource role, select <strong>&ldquo;Create and use a new service role&rdquo;</strong> to let Amazon Bedrock create the service role and set up the required permissions on your behalf.
-<img src="/images/7/img_2.png?width=90pc" alt="img_2"></p>
-</li>
-<li>
-<p>In the <strong>Select Model</strong> you can choose a model for the agent. Refer here to see the supported models for agents. Within the instructions for the agent, provide the following instructions.</p>
+<p>Tạo API mới</p>
+<ul>
+<li>Chọn <strong>REST API</strong></li>
+</ul>
+<p><img src="/images/7/api2.png?width=90pc" alt="api2"></p>
+<ul>
+<li>Nhập <strong>tên API</strong> và <strong>Tạo</strong>
+<img src="/images/7/api3.png?width=90pc" alt="api3"></li>
+</ul>
 </li>
 </ol>
-<p><em>&ldquo;You are a customer service representative at ABCD Bank, a leading financial institution. You are friendly, professional, and attentive. Your primary responsibilities include assisting customers with their needs, providing information about products and services, addressing customer inquiries, and ensuring a positive customer experience.&rdquo;</em></p>
-<p><img src="/images/7/Agent5.png?width=90pc" alt="Agent5"></p>
-<ol start="6">
+<h4 id="bước-2-tạo-upload-resource">Bước 2: Tạo Upload Resource</h4>
+<ol>
 <li>
-<p>Scroll down to the <strong>Guardrails details</strong> section, choose <strong>Edit</strong> to associate our guardrail with the agent.
-<img src="/images/7/img_3.png?width=90pc" alt="img_3"></p>
-</li>
-<li>
-<p>Select our Guardrail and Click on <strong>Save and Exit</strong> to associate our guardrail with the agent. <em>In case you recieve a message of &ldquo;You must save your agent with an Agent Resource Role defined before adding a guardrail&rdquo; then try saving the Agent first before associating the Guardrail</em>
-<img src="/images/7/img_4.png?width=90pc" alt="img_4"></p>
-</li>
-<li>
-<p>Click on <strong>Prepare</strong> the agent in order to test it with our updated configurations in the test window.
-<img src="/images/7/img_5.png?width=90pc" alt="img_5"></p>
-</li>
-<li>
-<p>Now you can test the agent using the same scenarios we selected earlier in the right panel</p>
+<p>Tạo <strong>resource</strong> mới</p>
+<ul>
+<li><strong>Tên resource</strong>: Nhập tên mô tả</li>
+<li><strong>Bật CORS</strong>: Chọn tùy chọn này</li>
+</ul>
+<p><img src="/images/7/api4.png?width=90pc" alt="api4">
+<img src="/images/7/api5.png?width=90pc" alt="api5"></p>
 </li>
 </ol>
+<h4 id="bước-3-tạo-dynamic-path-resource">Bước 3: Tạo Dynamic Path Resource</h4>
+<ol>
+<li>
+<p>Tạo <strong>child resource</strong></p>
+<ul>
+<li><strong>Tên resource</strong>: <code>{filename}</code></li>
+<li><strong>Bật CORS</strong>: Chọn tùy chọn này</li>
+</ul>
+<p><img src="/images/7/api6.png?width=90pc" alt="api6"></p>
+</li>
+</ol>
+<h4 id="bước-4-cấu-hình-post-method">Bước 4: Cấu Hình POST Method</h4>
+<ol>
+<li>
+<p>Tạo method để upload file</p>
+<p><img src="/images/7/api7.png?width=90pc" alt="api7"></p>
+<ul>
+<li><strong>Loại method</strong>: POST</li>
+<li><strong>Lambda Proxy Integration</strong>: Bật</li>
+<li><strong>Hàm Lambda</strong>: Chọn hàm xử lý upload S3</li>
+</ul>
+<p><img src="/images/7/api8.png?width=90pc" alt="api8"></p>
+</li>
+</ol>
+<h4 id="bước-5-cấu-hình-response-headers">Bước 5: Cấu Hình Response Headers</h4>
+<ol>
+<li>
+<p>Thiết lập cấu hình response</p>
+<ul>
+<li><strong>Response headers</strong>: <code>Access-Control-Allow-Origin</code></li>
+<li><strong>Response body</strong>: <code>application/json</code></li>
+</ul>
+<p><img src="/images/7/api9.png?width=90pc" alt="api9"></p>
+</li>
+</ol>
+<h4 id="bước-6-cấu-hình-media-types">Bước 6: Cấu Hình Media Types</h4>
+<ol>
+<li>
+<p>Truy cập <strong>cài đặt API</strong></p>
+<p><img src="/images/7/api10.png?width=90pc" alt="api10"></p>
+</li>
+<li>
+<p>Thêm <strong>media type</strong> cho upload file
+<img src="/images/7/api11.png?width=90pc" alt="api11"></p>
+</li>
+</ol>
+<h3 id="api-truy-xuất-dữ-liệu">API Truy Xuất Dữ Liệu</h3>
+<h4 id="bước-1-tạo-view-resource">Bước 1: Tạo View Resource</h4>
+<ol>
+<li>
+<p>Tạo resource mới để truy xuất dữ liệu</p>
+<p><img src="/images/7/api12.png?width=90pc" alt="api12"></p>
+<ul>
+<li><strong>Tên resource</strong>: <code>view-all</code></li>
+<li><strong>Bật CORS</strong>: Chọn tùy chọn này</li>
+<li><strong>Tạo</strong>
+<img src="/images/7/api13.png?width=90pc" alt="api13"></li>
+</ul>
+</li>
+</ol>
+<h4 id="bước-2-cấu-hình-get-method">Bước 2: Cấu Hình GET Method</h4>
+<ol>
+<li>
+<p>Tạo method để truy xuất dữ liệu</p>
+<p><img src="/images/7/api14.png?width=90pc" alt="api14"></p>
+<ul>
+<li><strong>Loại method</strong>: GET</li>
+<li><strong>Lambda Proxy Integration</strong>: Bật</li>
+<li><strong>Hàm Lambda</strong>: Chọn hàm scanner DynamoDB</li>
+</ul>
+<p><img src="/images/7/api15.png?width=90pc" alt="api15"></p>
+</li>
+</ol>
+<h4 id="bước-3-deploy-api">Bước 3: Deploy API</h4>
+<ol>
+<li>
+<p>Deploy API để có thể truy cập được</p>
+<p><img src="/images/7/api16.png?width=90pc" alt="api16"></p>
+</li>
+<li>
+<p><strong>Quan trọng</strong>: Lưu URL deployment để tích hợp frontend
+<img src="/images/7/api17.png?width=90pc" alt="api17"></p>
+</li>
+</ol>
+<h2 id="thực-hành-tốt-nhất">Thực Hành Tốt Nhất</h2>
+<h3 id="bảo-mật">Bảo Mật</h3>
+<ul>
+<li>Luôn bật CORS cho các yêu cầu cross-origin</li>
+<li>Triển khai xác thực và ủy quyền phù hợp</li>
+<li>Sử dụng API keys để kiểm soát truy cập bổ sung</li>
+</ul>
+<h3 id="hiệu-suất">Hiệu Suất</h3>
+<ul>
+<li>Bật caching cho các endpoints được truy cập thường xuyên</li>
+<li>Cấu hình giới hạn throttling phù hợp</li>
+<li>Giám sát việc sử dụng API và các số liệu hiệu suất</li>
+</ul>
+<h3 id="giám-sát">Giám Sát</h3>
+<ul>
+<li>Thiết lập CloudWatch logging để debug</li>
+<li>Cấu hình cảnh báo cho tỷ lệ lỗi và độ trễ</li>
+<li>Sử dụng AWS X-Ray để tracing phân tán</li>
+</ul>
+<hr>
+<h2 id="tiếp-tục">Tiếp tục</h2>
+<p><a href="/vi/8-testing/">8. Kiểm Thử</a></p>
 
 
 
@@ -647,8 +948,74 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -677,6 +1044,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -714,10 +1097,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/6-lambda/" title="Testing Guardrail"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/6-lambda/6.4-withbedrock/" title="Tương Tác Với Bedrock"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/8-testing/" title="Test Guardrails with the Agent" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/8-testing/" title="Kiểm Thử Ứng Dụng" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -727,19 +1110,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819602"></script>
+    <script src="/js/jquery.sticky.js?1754819602"></script>
+    <script src="/js/featherlight.min.js?1754819602"></script>
+    <script src="/js/highlight.pack.js?1754819602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819602"></script>
+    <script src="/js/learn.js?1754819602"></script>
+    <script src="/js/hugo-learn.js?1754819602"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

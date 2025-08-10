@@ -1,8 +1,14 @@
 # Change the default theme to be use when building the site with Hugo
-baseURL = "https://honganh29122002.github.io/Serverless-Invoice-Reading-and-Storage-System"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "hugo-theme-learn"
+
+# Enable multilingual mode
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # For search functionality
 [outputs]
@@ -21,9 +27,10 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Amazon Bedrock Guardrails"
+title = "Serverless Invoice Reading and Storage System"
 weight = 1
 languageName = "English"
+contentDir = "content"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
@@ -32,9 +39,10 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "Amazon Bedrock Guardrails"
+title = "Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless"
 weight = 2
 languageName = "Tiếng Việt"
+contentDir = "content"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"

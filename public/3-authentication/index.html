@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Authentication :: Amazon Bedrock Guardrails</title>
+    <title>Authentication :: Serverless Invoice Reading and Storage System</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819793" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819793" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819793" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819793" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819793" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819793" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819793" rel="stylesheet">
+    <link href="/css/theme.css?1754819793" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819793" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819793" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819793"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819793"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819793"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819793"></script>
 
     
   </div>
@@ -432,6 +432,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10-conclusion/">
+          <b>10. </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -519,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -527,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -593,6 +619,8 @@
         <li><a href="#step-7-confirm-user-status">Step 7: Confirm User Status</a></li>
       </ul>
     </li>
+    <li><a href="#continue-to">Continue to</a></li>
+    <li><a href="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -627,6 +655,7 @@
 <li>Click <strong>Create User Pool</strong></li>
 </ol>
 <h3 id="step-2-configure-application-settings">Step 2: Configure Application Settings</h3>
+<p><img src="/images/3/cog1.png?width=90pc" alt="cog1"></p>
 <ul>
 <li>
 <p><strong>Application type</strong>: Single-page application</p>
@@ -636,11 +665,13 @@
 </li>
 <li>
 <p><strong>Sign-in options</strong>: Username</p>
+<p><img src="/images/3/cog2.png?width=90pc" alt="cog2"></p>
 </li>
 <li>
 <p><strong>Return URL</strong>: Enter your application URL</p>
-<p><img src="/images/3/cog1.png?width=90pc" alt="cog1">
-<img src="/images/3/cog2.png?width=90pc" alt="cog2">
+</li>
+<li>
+<p><strong>Required attributes for sign-up</strong>: email
 <img src="/images/3/cog3.png?width=90pc" alt="cog3"></p>
 </li>
 </ul>
@@ -657,38 +688,34 @@
 <h3 id="step-4-save-configuration-details">Step 4: Save Configuration Details</h3>
 <p><strong>Important</strong>: Record the following values for application integration:</p>
 <ul>
-<li>
-<p><strong>User Pool ID</strong></p>
-</li>
-<li>
-<p><strong>Client ID</strong></p>
-<p><img src="/images/3/cog5.png?width=90pc" alt="cog5">
-<img src="/images/3/cog6.png?width=90pc" alt="cog6"></p>
-</li>
+<li><strong>User Pool ID</strong>
+<img src="/images/3/cog5.png?width=90pc" alt="cog5"></li>
+<li><strong>Client ID</strong>
+<img src="/images/3/cog6.png?width=90pc" alt="cog6"></li>
 </ul>
 <h3 id="step-5-create-test-user-account">Step 5: Create Test User Account</h3>
 <ol>
 <li>
 <p>Create a new user account for testing</p>
+<p><img src="/images/3/cog7.png?width=90pc" alt="cog7"></p>
 </li>
 <li>
 <p>Complete the registration process</p>
-<p><img src="/images/3/cog7.png?width=90pc" alt="cog7">
-<img src="/images/3/cog8.png?width=90pc" alt="cog8"></p>
+<p><img src="/images/3/cog8.png?width=90pc" alt="cog8"></p>
 </li>
 </ol>
 <h3 id="step-6-verify-authentication">Step 6: Verify Authentication</h3>
 <ol>
-<li>
-<p>Log in using the created credentials</p>
-</li>
-<li>
-<p>Verify successful authentication</p>
-<p><img src="/images/3/cog9.png?width=90pc" alt="cog9">
-<img src="/images/3/cog10.png?width=90pc" alt="cog10">
-<img src="/images/3/cog11.png?width=90pc" alt="cog11"></p>
-</li>
+<li>Log in using the created credentials</li>
+<li>Verify successful authentication</li>
 </ol>
+<ul>
+<li>Enter the username and password you set up earlier.
+<img src="/images/3/cog9.png?width=90pc" alt="cog9">
+<img src="/images/3/cog10.png?width=90pc" alt="cog10"></li>
+<li>Change password and confirm
+<img src="/images/3/cog11.png?width=90pc" alt="cog11"></li>
+</ul>
 <h3 id="step-7-confirm-user-status">Step 7: Confirm User Status</h3>
 <ul>
 <li>
@@ -698,6 +725,16 @@
 <p>User is now ready for application access</p>
 <p><img src="/images/3/cog12.png?width=90pc" alt="cog12"></p>
 </li>
+</ul>
+<hr>
+<h2 id="continue-to">Continue to</h2>
+<p><a href="/4-storage-db/">4. Storage &amp; Database</a></p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cognito/">Amazon Cognito Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html">Cognito User Pools</a></li>
+<li><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/security.html">Authentication Best Practices</a></li>
 </ul>
 
 
@@ -951,6 +988,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -973,19 +1026,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819793"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819793"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819793"></script>
+    <script src="/js/jquery.sticky.js?1754819793"></script>
+    <script src="/js/featherlight.min.js?1754819793"></script>
+    <script src="/js/highlight.pack.js?1754819793"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819793"></script>
+    <script src="/js/learn.js?1754819793"></script>
+    <script src="/js/hugo-learn.js?1754819793"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819793" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819793"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

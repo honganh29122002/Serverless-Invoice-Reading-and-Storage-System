@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/vi/6-lambda/6.1-scandb/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.1-scandb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.1-scandb/"
+                />
+  </url><url>
     <loc>http://localhost:1313/vi/1-introduction/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -16,7 +29,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/vi/</loc>
-    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,6 +39,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/6-lambda/6.2-saveimagetos3/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.2-saveimagetos3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.2-saveimagetos3/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/2-frontend/</loc>
@@ -39,6 +65,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/2-frontend/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/6-lambda/6.3-withtextract/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.3-withtextract/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.3-withtextract/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/3-authentication/</loc>
@@ -65,6 +104,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/4-storage-db/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/6-lambda/6.4-withbedrock/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.4-withbedrock/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.4-withbedrock/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/5-document-ai/</loc>
@@ -130,6 +182,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/9-delete-source/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/10-conclusion/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/10-conclusion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/10-conclusion/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/categories/</loc>

@@ -1,7 +1,7 @@
 +++
 title = "Interact with Textract"
 date = 2024-05-14T00:38:32+07:00
-weight = 8
+weight = 3
 chapter = false
 pre = "<b>6.3 </b>"
 +++
@@ -219,4 +219,7 @@ def lambda_handler(event, context):
    ![lambdatrigger2](/images/6/lambdatrigger2.png?width=90pc)
    ![lambdatrigger3](/images/6/lambdatrigger3.png?width=90pc)
 
+---
 
+**Continue to**:
+[6.4 Interact with bedrock](../6.4-withBedrock/)

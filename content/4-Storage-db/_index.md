@@ -68,3 +68,17 @@ This section covers the setup of data storage components including DynamoDB for 
 - **Important**: Record the bucket ARN for Lambda function and application configuration
 
    ![s3-4](/images/4/s3-4.png?width=90pc)
+
+---
+
+## Continue to
+
+[5. Document AI](../5-document-ai/)
+
+---
+
+## References
+
+- [Amazon DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
+- [Amazon S3 User Guide](https://docs.aws.amazon.com/s3/)
+- [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)

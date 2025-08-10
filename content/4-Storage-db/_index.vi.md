@@ -1,15 +1,84 @@
 +++
-title = "Creating Denied Topics"
+title = "Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu"
 date = 2024-05-14T00:38:32+07:00
 weight = 4
 chapter = false
 pre = "<b>4. </b>"
 +++
 
-Guardrails can be configured with a set of denied topics that are undesirable in the context of your generative AI application. For example, a bank may want their AI assistant to avoid any conversation related to investment advice or engage in conversations related to cyrptocurrencies.
+Phần này bao gồm việc thiết lập các thành phần lưu trữ dữ liệu bao gồm DynamoDB cho dữ liệu có cấu trúc và S3 cho lưu trữ file.
 
-You can define up to 30 denied topics. Input prompts and model completions will be evaluated against each of these denied topics. If one of the denied topics is detected, the blocked message configured as part of the guardrail will be returned to the user.
+## Cấu Hình Amazon DynamoDB
 
-Denied topics can be defined by providing a natural language definition of the topic along with a few optional example phrases of the topic. The definition and example phrases are used to detect if an input prompt or a model completion belongs to the topic.
+### Bước 1: Truy Cập DynamoDB Console
 
-In the following section we will configure three types of Denied topics for m**edical advice**, **financial advice** and **political advice**.
+1. Điều hướng đến [DynamoDB Console](https://ap-southeast-1.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-1#service)
+
+   ![db1](/images/4/db1.png?width=90pc)
+
+### Bước 2: Tạo Bảng Mới
+
+1. Nhấp **Create table**
+2. Cấu hình cài đặt bảng
+
+   ![db2](/images/4/db2.png?width=90pc)
+
+### Bước 3: Định Nghĩa Schema Bảng
+
+- **Tên bảng**: Nhập tên bảng mô tả
+- **Partition key**: Định nghĩa thuộc tính khóa chính
+- **Sort key**: Cấu hình khóa phụ (nếu cần)
+
+   ![db3](/images/4/db3.png?width=90pc)
+   ![db4](/images/4/db4.png?width=90pc)
+
+### Bước 4: Lưu Cấu Hình Bảng
+
+- Xác minh việc tạo bảng thành công
+- **Quan trọng**: Ghi lại ARN của bảng để cấu hình hàm Lambda
+
+   ![db5](/images/4/db5.png?width=90pc)
+
+## Cấu Hình Amazon S3
+
+### Bước 1: Truy Cập S3 Console
+
+1. Điều hướng đến [S3 Console](https://s3.console.aws.amazon.com/s3/home?region=ap-southeast-1)
+
+   ![s3-1](/images/4/s3-1.png?width=90pc)
+
+### Bước 2: Tạo S3 Bucket
+
+1. Nhấp **Create bucket**
+2. Cấu hình cài đặt bucket
+
+   ![s3-2](/images/4/s3-2.png?width=90pc)
+
+### Bước 3: Cấu Hình Thuộc Tính Bucket
+
+- **Tên bucket**: Nhập tên bucket duy nhất
+- **Vùng**: Chọn vùng AWS phù hợp
+- **Cài đặt truy cập**: Cấu hình theo yêu cầu bảo mật
+
+   ![s3-3](/images/4/s3-3.png?width=90pc)
+
+### Bước 4: Lưu Cấu Hình Bucket
+
+- Xác minh việc tạo bucket thành công
+- **Quan trọng**: Ghi lại ARN của bucket để cấu hình hàm Lambda và ứng dụng
+
+   ![s3-4](/images/4/s3-4.png?width=90pc)
+
+---
+
+## Tiếp tục
+
+[5. Document AI](../5-document-ai/)
+
+---
+
+## Tài Liệu Tham Khảo
+
+- [Amazon DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
+- [Amazon S3 User Guide](https://docs.aws.amazon.com/s3/)
+- [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)

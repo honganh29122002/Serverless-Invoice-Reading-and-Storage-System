@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Save Picture to S3 on Amazon Bedrock Guardrails</title>
+    <title>Save Picture to S3 on Serverless Invoice Reading and Storage System</title>
     <link>http://localhost:1313/6-lambda/6.2-saveimagetos3/</link>
-    <description>Recent content in Save Picture to S3 on Amazon Bedrock Guardrails</description>
+    <description>Recent content in Save Picture to S3 on Serverless Invoice Reading and Storage System</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>

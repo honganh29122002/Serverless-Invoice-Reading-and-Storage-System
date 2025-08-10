@@ -71,3 +71,17 @@ This section covers comprehensive testing procedures to validate the functionali
    ![test](/images/8/test11.png?width=90pc)
    ![test](/images/8/test12.png?width=90pc)
    ![test](/images/8/test13.png?width=90pc)
+
+---
+
+## Continue to
+
+[9. Cleanup](../9-delete-source/)
+
+---
+
+## References
+
+- [AWS Testing Best Practices](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/testing.html)
+- [API Gateway Testing](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-testing.html)
+- [Lambda Function Testing](https://docs.aws.amazon.com/lambda/latest/dg/testing-debugging.html)

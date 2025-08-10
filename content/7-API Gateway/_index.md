@@ -47,18 +47,19 @@ In our serverless architecture, API Gateway serves as the orchestration layer:
 
 2. Create new API
    - Select **REST API**
-   - Enter **API name**
 
    ![api2](/images/7/api2.png?width=90pc)
+   - Enter **API name** and **Create**
    ![api3](/images/7/api3.png?width=90pc)
 
 #### Step 2: Create Upload Resource
 
 1. Create new **resource**
+   
+   ![api4](/images/7/api4.png?width=90pc)
    - **Resource name**: Enter descriptive name
    - **Enable CORS**: Check this option
-
-   ![api4](/images/7/api4.png?width=90pc)
+  
    ![api5](/images/7/api5.png?width=90pc)
 
 #### Step 3: Create Dynamic Path Resource
@@ -72,11 +73,12 @@ In our serverless architecture, API Gateway serves as the orchestration layer:
 #### Step 4: Configure POST Method
 
 1. Create method for file upload
+
+   ![api7](/images/7/api7.png?width=90pc)
    - **Method type**: POST
    - **Lambda Proxy Integration**: Enable
    - **Lambda function**: Select S3 upload handler function
-
-   ![api7](/images/7/api7.png?width=90pc)
+  
    ![api8](/images/7/api8.png?width=90pc)
 
 #### Step 5: Configure Response Headers
@@ -90,9 +92,9 @@ In our serverless architecture, API Gateway serves as the orchestration layer:
 #### Step 6: Configure Media Types
 
 1. Access **API settings**
-2. Add **media type** for file uploads
 
    ![api10](/images/7/api10.png?width=90pc)
+2. Add **media type** for file uploads
    ![api11](/images/7/api11.png?width=90pc)
 
 ### Data Retrieval API
@@ -100,28 +102,30 @@ In our serverless architecture, API Gateway serves as the orchestration layer:
 #### Step 1: Create View Resource
 
 1. Create new resource for data retrieval
-   - **Resource name**: `view-all`
-   - **Enable CORS**: Check this option
 
    ![api12](/images/7/api12.png?width=90pc)
+   - **Resource name**: `view-all`
+   - **Enable CORS**: Check this option
+   - **Create**
    ![api13](/images/7/api13.png?width=90pc)
 
 #### Step 2: Configure GET Method
 
 1. Create method for data retrieval
+
+   ![api14](/images/7/api14.png?width=90pc)
    - **Method type**: GET
    - **Lambda Proxy Integration**: Enable
    - **Lambda function**: Select DynamoDB scanner function
-
-   ![api14](/images/7/api14.png?width=90pc)
+  
    ![api15](/images/7/api15.png?width=90pc)
 
 #### Step 3: Deploy API
 
 1. Deploy the API to make it accessible
-2. **Important**: Save the deployment URL for frontend integration
 
    ![api16](/images/7/api16.png?width=90pc)
+2. **Important**: Save the deployment URL for frontend integration
    ![api17](/images/7/api17.png?width=90pc)
 
 ## Best Practices
@@ -140,3 +144,9 @@ In our serverless architecture, API Gateway serves as the orchestration layer:
 - Set up CloudWatch logging for debugging
 - Configure alarms for error rates and latency
 - Use AWS X-Ray for distributed tracing
+
+---
+
+## Continue to
+
+[8. Testing](../8-testing/)

@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Testing Guardrail :: Amazon Bedrock Guardrails</title>
+    <title>Cấu Hình Lambda :: Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819602" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819602" rel="stylesheet">
+    <link href="/css/theme.css?1754819602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819602" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819602" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819602"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819602"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduction/" title="Giới Thiệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Giới Thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/2-frontend/" title="Getting Started" class="dd-item 
+    <li data-nav-id="/vi/2-frontend/" title="Frontend" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-frontend/">
-          <b>2. </b>Getting Started
+          <b>2. </b>Frontend
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/vi/3-authentication/" title="Amazon Bedrock Guardrails" class="dd-item 
+    <li data-nav-id="/vi/3-authentication/" title="Xác Thực" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-authentication/">
-          <b>3. </b>Amazon Bedrock Guardrails
+          <b>3. </b>Xác Thực
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,13 @@
  
   
     
-    <li data-nav-id="/vi/4-storage-db/" title="Creating Denied Topics" class="dd-item 
+    <li data-nav-id="/vi/4-storage-db/" title="Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/4-storage-db/">
-          <b>4. </b>Creating Denied Topics
+          <b>4. </b>Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/vi/5-document-ai/" title="Add filters to Guardrail" class="dd-item 
+    <li data-nav-id="/vi/5-document-ai/" title="Document AI" class="dd-item 
         
         
         
         ">
       <a href="/vi/5-document-ai/">
-          <b>5. </b>Add filters to Guardrail
+          <b>5. </b>Document AI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,18 +212,142 @@
  
   
     
-    <li data-nav-id="/vi/6-lambda/" title="Testing Guardrail" class="dd-item 
+    <li data-nav-id="/vi/6-lambda/" title="Cấu Hình Lambda" class="dd-item 
         
         active
         
         ">
       <a href="/vi/6-lambda/">
-          <b>6. </b>Testing Guardrail
+          <b>6. </b>Cấu Hình Lambda
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.1-scandb/" title="Lấy Dữ Liệu Từ DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.1-scandb/">
+          <b>6.1 </b>Lấy Dữ Liệu Từ DB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.2-saveimagetos3/" title="Lưu Hình Ảnh Vào S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.2-saveimagetos3/">
+          <b>6.2 </b>Lưu Hình Ảnh Vào S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.3-withtextract/" title="Tương Tác Với Textract" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.3-withtextract/">
+          <b>6.3 </b>Tương Tác Với Textract
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.4-withbedrock/" title="Tương Tác Với Bedrock" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.4-withbedrock/">
+          <b>6.4 </b>Tương Tác Với Bedrock
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -238,13 +362,13 @@
  
   
     
-    <li data-nav-id="/vi/7-api-gateway/" title="Apply Guardrails to Agent" class="dd-item 
+    <li data-nav-id="/vi/7-api-gateway/" title="Cấu Hình API Gateway" class="dd-item 
         
         
         
         ">
       <a href="/vi/7-api-gateway/">
-          <b>7. </b>Apply Guardrails to Agent
+          <b>7. </b>Cấu Hình API Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -264,13 +388,13 @@
  
   
     
-    <li data-nav-id="/vi/8-testing/" title="Test Guardrails with the Agent" class="dd-item 
+    <li data-nav-id="/vi/8-testing/" title="Kiểm Thử Ứng Dụng" class="dd-item 
         
         
         
         ">
       <a href="/vi/8-testing/">
-          <b>8. </b>Test Guardrails with the Agent
+          <b>8. </b>Kiểm Thử Ứng Dụng
           
             <i class="fas fa-check read-icon"></i>
           
@@ -290,13 +414,39 @@
  
   
     
-    <li data-nav-id="/vi/9-delete-source/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/vi/9-delete-source/" title="Dọn Dẹp Tài Nguyên" class="dd-item 
         
         
         
         ">
       <a href="/vi/9-delete-source/">
-          <b>9. </b>Dọn dẹp tài nguyên
+          <b>9. </b>Dọn Dẹp Tài Nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/10-conclusion/" title="Kết Luận" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/10-conclusion/">
+          <b>10. </b>Kết Luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -395,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -403,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -443,7 +593,7 @@
             
           
           
-            <a href='/vi/'>Invoices Serverless</a> > Testing Guardrail
+            <a href='/vi/'>Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</a> > Cấu Hình Lambda
           
         
           
@@ -456,13 +606,10 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#financial-advice">Financial Advice</a></li>
-        <li><a href="#political-opinions">Political Opinions:</a></li>
-        <li><a href="#medical-advice">Medical Advice:</a></li>
-      </ul>
-    </li>
+    <li><a href="#tổng-quan">Tổng Quan</a></li>
+    <li><a href="#kiến-trúc-hàm">Kiến Trúc Hàm</a></li>
+    <li><a href="#tiếp-tục">Tiếp tục</a></li>
+    <li><a href="#tài-liệu-tham-khảo">Tài Liệu Tham Khảo</a></li>
   </ul>
 </nav>
     </div>
@@ -480,7 +627,7 @@
           
             <h1>
               
-              Testing Guardrail
+              Cấu Hình Lambda
             </h1>
           
 
@@ -488,42 +635,27 @@
 
 
 
-	<p>Let us now test our created Guardrail to see how well it is working and if it is meeting Stellar Bank’s requirements:</p>
-<p>Click on <strong>Bedrock → Guardrails</strong> and choose the Guardrail created
-<img src="/images/6/img.png?width=90pc" alt="img"></p>
-<p>You will see a screen similar to the below
-<img src="/images/6/img_1.png?width=90pc" alt="img_1"></p>
-<p>By default, the working draft of the guardrail is used in the test window. To test a different version of the guardrail, choose Working draft at the top of the test window and then select the version.</p>
-<p>To select a model, choose <strong>Select model</strong>. You can choose any model that you enabled at the start of the workshop. After you make a choice, select <strong>Apply</strong>. To change the model, choose <strong>Change</strong>.
-<img src="/images/6/img_2.png?width=90pc" alt="img_2"></p>
-<p>Enter the following prompts in the Prompt and click <strong>Run</strong> to see what responses are generated</p>
-<h3 id="financial-advice">Financial Advice</h3>
-<p><strong>Promp:</strong> &ldquo;Can you suggest some good stocks to invest in right now?&rdquo;
-<img src="/images/6/img_3.png?width=90pc" alt="img_3"></p>
-<p>The model returns a response in the Final response box (that may be modified by the guardrail).</p>
-<p>If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-<img src="/images/6/img_4.png?width=90pc" alt="img_4"></p>
-<p>To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select <strong>View trace</strong>. We can see that our Financial Advice Guardrail was activated to stop this topic from being discussed.</p>
-<p>Use the <strong>Prompt</strong> and <strong>Model response</strong> tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-<img src="/images/6/img_5.png?width=90pc" alt="img_5"></p>
-<h3 id="political-opinions">Political Opinions:</h3>
-<p><strong>Prompt:</strong> &ldquo;What&rsquo;s your stance on the current government policies?&rdquo;
-<img src="/images/6/img_6.png?width=90pc" alt="img_6"></p>
-<p>The model returns a response in the Final response box (that may be modified by the guardrail).</p>
-<p>If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-<img src="/images/6/img_7.png?width=90pc" alt="img_7"></p>
-<p>To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select <strong>View trace</strong>. We can see that our Political Advice Guardrail was activated to stop this topic from being discussed.</p>
-<p>Use the <strong>Prompt</strong> and <strong>Model response</strong> tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-<img src="/images/6/img_8.png?width=90pc" alt="img_8"></p>
-<h3 id="medical-advice">Medical Advice:</h3>
-<p><strong>Prompt:</strong> &ldquo;What should I do to manage my stress levels due to financial issues?&rdquo;
-<img src="/images/6/img_9.png?width=90pc" alt="img_9"></p>
-<p>The model returns a response in the Final response box (that may be modified by the guardrail).</p>
-<p>If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-<img src="/images/6/img_10.png?width=90pc" alt="img_10"></p>
-<p>To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select <strong>View trace</strong>. We can see that our Medical Advice Guardrail was activated to stop this topic from being discussed.</p>
-<p>Use the <strong>Prompt</strong> and <strong>Model response</strong> tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-<img src="/images/6/img_11.png?width=90pc" alt="img_11"></p>
+	<p>Phần này bao gồm việc cấu hình và triển khai các hàm serverless để cung cấp năng lượng cho quy trình xử lý tài liệu.</p>
+<h2 id="tổng-quan">Tổng Quan</h2>
+<p>Ứng dụng sử dụng nhiều hàm Lambda để xử lý các khía cạnh khác nhau của pipeline xử lý hóa đơn:</p>
+<ul>
+<li><strong>Database Scanner</strong>: Truy xuất và quản lý dữ liệu từ DynamoDB</li>
+<li><strong>Image Upload Handler</strong>: Xử lý việc tải file lên S3</li>
+<li><strong>Textract Integration</strong>: Trích xuất dữ liệu từ tài liệu hóa đơn</li>
+<li><strong>Bedrock Integration</strong>: Cung cấp phân tích và hiểu biết sâu sắc được hỗ trợ bởi AI</li>
+</ul>
+<h2 id="kiến-trúc-hàm">Kiến Trúc Hàm</h2>
+<p>Mỗi hàm Lambda được thiết kế với các trách nhiệm cụ thể để duy trì sự tách biệt các mối quan tâm và tối ưu hóa hiệu suất. Các hàm hoạt động cùng nhau để tạo ra một pipeline xử lý serverless hoàn chỉnh có thể tự động mở rộng dựa trên nhu cầu.</p>
+<hr>
+<h2 id="tiếp-tục">Tiếp tục</h2>
+<p><a href="/vi/7-api-gateway/">7. API Gateway</a></p>
+<hr>
+<h2 id="tài-liệu-tham-khảo">Tài Liệu Tham Khảo</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/lambda/">AWS Lambda Documentation</a></li>
+<li><a href="https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html">Lambda Best Practices</a></li>
+<li><a href="https://aws.amazon.com/serverless/patterns/">Serverless Architecture Patterns</a></li>
+</ul>
 
 
 
@@ -653,6 +785,24 @@
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -664,8 +814,72 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -719,10 +933,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/5-document-ai/" title="Add filters to Guardrail"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/5-document-ai/" title="Document AI"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/7-api-gateway/" title="Apply Guardrails to Agent" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/6-lambda/6.1-scandb/" title="Lấy Dữ Liệu Từ DB" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -732,19 +946,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819602"></script>
+    <script src="/js/jquery.sticky.js?1754819602"></script>
+    <script src="/js/featherlight.min.js?1754819602"></script>
+    <script src="/js/highlight.pack.js?1754819602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819602"></script>
+    <script src="/js/learn.js?1754819602"></script>
+    <script src="/js/hugo-learn.js?1754819602"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

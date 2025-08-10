@@ -25,3 +25,43 @@ Once a user is authenticated, API Gateway forwards the request to specific AWS L
 - **High performance** – Quick processing and automatic adjustment based on traffic volume.
 
 - **Easy integration** – AWS services work seamlessly together, simplifying development and operations.
+
+## Workshop Structure
+
+This workshop is organized into the following sections to guide you through building a complete serverless invoice processing system:
+
+[1. Introduction](1-introduction/)
+
+[2. Frontend](2-frontend/)
+
+[3. Authentication](3-authentication/)
+
+
+[4. Storage & Database](4-storage-db/)
+
+
+[5. Document AI](5-document-ai/)
+
+
+[6. Lambda Functions](6-lambda/)
+
+
+[7. API Gateway](7-api-gateway/)
+
+
+[8. Testing](8-testing/)
+
+
+[9. Delete Source](9-delete-source/)
+
+[10. Conclusion](10-conclusion/)
+
+---
+
+## Getting Started
+
+To begin this workshop, click on **[Introduction](1-introduction/)** or use the navigation menu on the left to proceed through each section step by step.
+
+{{% notice tip %}}
+Make sure you have an AWS account with appropriate permissions before starting this workshop.
+{{% /notice %}}

@@ -82,27 +82,47 @@ Amazon Bedrock provides a platform to access foundation models through APIs:
 - **Data Privacy**: Protects customer and vendor information
 - **Quality Control**: Ensures quality and appropriate output
 
-## Overall Processing Workflow
+## Amazon Textract Workflow
 
-### Step 1: Document Ingestion
-- Invoices are uploaded to S3
-- Lambda function is automatically triggered
-- Validation and preprocessing
+```mermaid
+graph TB
+    A[User/Client] --> B[AWS Amplify Frontend]
+    B --> C[Amazon API Gateway]
+    C --> D[AWS Lambda Upload Handler]
+    D --> E[Amazon S3 File Storage]
+    E --> F[AWS Lambda Textract Handler]
+    F --> G[Amazon Textract Document Analysis]
+    G --> H[Amazon DynamoDB Extracted Data]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#fff3e0
+    style G fill:#e0f2f1
+    style H fill:#f1f8e9
+```
 
-### Step 2: Data Extraction (Textract)
-- Textract analyze_expense API is called
-- Extracts structured data from invoices
-- Confidence scores for each field
+## Amazon Bedrock Workflow
 
-### Step 3: Intelligent Analysis (Bedrock)
-- Data from Textract is sent to Claude 3 Haiku
-- AI analyzes, verifies, and generates insights
-- Guardrails ensure safe output
-
-### Step 4: Result Storage
-- Results are formatted and stored
-- Metadata and audit trail
-- Integration with downstream systems
+```mermaid
+graph TB
+    A[User/Client] --> B[AWS Amplify Frontend]
+    B --> C[Amazon API Gateway]
+    C --> D[AWS Lambda Bedrock Handler]
+    D --> E[Amazon DynamoDB Get Textract Data]
+    E --> F[Amazon Bedrock Claude 3 Haiku]
+    F --> G[Amazon DynamoDB AI Analysis Result]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#f1f8e9
+    style F fill:#ffebee
+    style G fill:#f1f8e9
+```
 
 ## Benefits of Serverless Architecture
 
@@ -133,3 +153,7 @@ Amazon Bedrock provides a platform to access foundation models through APIs:
 - [Claude 3 Haiku Model Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-3.html)
 
 ---
+
+## Continue to
+
+[6. Lambda Functions](../6-lambda/)

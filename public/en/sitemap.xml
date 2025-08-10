@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/6-lambda/6.1-scandb/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.1-scandb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.1-scandb/"
+                />
+  </url><url>
     <loc>http://localhost:1313/1-introduction/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -28,6 +41,19 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/6-lambda/6.2-saveimagetos3/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.2-saveimagetos3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.2-saveimagetos3/"
+                />
+  </url><url>
     <loc>http://localhost:1313/2-frontend/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -41,6 +67,19 @@
                 href="http://localhost:1313/2-frontend/"
                 />
   </url><url>
+    <loc>http://localhost:1313/6-lambda/6.3-withtextract/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.3-withtextract/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.3-withtextract/"
+                />
+  </url><url>
     <loc>http://localhost:1313/3-authentication/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -52,6 +91,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/3-authentication/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/6-lambda/6.4-withbedrock/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/6-lambda/6.4-withbedrock/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/6-lambda/6.4-withbedrock/"
                 />
   </url><url>
     <loc>http://localhost:1313/4-storage-db/</loc>
@@ -80,9 +132,6 @@
                 href="http://localhost:1313/5-document-ai/"
                 />
   </url><url>
-    <loc>http://localhost:1313/6-lambda/6.1-scandb/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/6-lambda/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -96,9 +145,6 @@
                 href="http://localhost:1313/6-lambda/"
                 />
   </url><url>
-    <loc>http://localhost:1313/6-lambda/6.2-saveimagetos3/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/7-api-gateway/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
@@ -111,9 +157,6 @@
                 hreflang="en"
                 href="http://localhost:1313/7-api-gateway/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/6-lambda/6.3-withtextract/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/8-testing/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
@@ -141,8 +184,18 @@
                 href="http://localhost:1313/9-delete-source/"
                 />
   </url><url>
-    <loc>http://localhost:1313/6-lambda/6.4-withbedrock/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <loc>http://localhost:1313/10-conclusion/</loc>
+    <lastmod>2024-08-19T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/10-conclusion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/10-conclusion/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link

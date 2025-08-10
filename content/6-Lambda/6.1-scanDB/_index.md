@@ -1,7 +1,7 @@
 +++
 title = "Get Data From DB"
 date = 2024-05-14T00:38:32+07:00
-weight = 6
+weight = 1
 chapter = false
 pre = "<b>6.1 </b>"
 +++
@@ -136,3 +136,9 @@ def lambda_handler(event, context):
   ```
     ![lambda7](/images/6/lambda7.png?width=90pc)
     ![lambda8](/images/6/lambda8.png?width=90pc)
+
+
+    ---
+
+    **Continue to**:
+    [6.2 Save picture to S3](../6.2-saveImagetoS3/)

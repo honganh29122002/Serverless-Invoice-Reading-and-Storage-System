@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Add filters to Guardrail :: Amazon Bedrock Guardrails</title>
+    <title>Document AI :: Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819602" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819602" rel="stylesheet">
+    <link href="/css/theme.css?1754819602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819602" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819602" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819602"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819602"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduction/" title="Giới Thiệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Giới Thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/2-frontend/" title="Getting Started" class="dd-item 
+    <li data-nav-id="/vi/2-frontend/" title="Frontend" class="dd-item 
         
         
         
         ">
       <a href="/vi/2-frontend/">
-          <b>2. </b>Getting Started
+          <b>2. </b>Frontend
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/vi/3-authentication/" title="Amazon Bedrock Guardrails" class="dd-item 
+    <li data-nav-id="/vi/3-authentication/" title="Xác Thực" class="dd-item 
         
         
         
         ">
       <a href="/vi/3-authentication/">
-          <b>3. </b>Amazon Bedrock Guardrails
+          <b>3. </b>Xác Thực
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,13 @@
  
   
     
-    <li data-nav-id="/vi/4-storage-db/" title="Creating Denied Topics" class="dd-item 
+    <li data-nav-id="/vi/4-storage-db/" title="Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu" class="dd-item 
         
         
         
         ">
       <a href="/vi/4-storage-db/">
-          <b>4. </b>Creating Denied Topics
+          <b>4. </b>Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/vi/5-document-ai/" title="Add filters to Guardrail" class="dd-item 
+    <li data-nav-id="/vi/5-document-ai/" title="Document AI" class="dd-item 
         
         active
         
         ">
       <a href="/vi/5-document-ai/">
-          <b>5. </b>Add filters to Guardrail
+          <b>5. </b>Document AI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,18 +212,142 @@
  
   
     
-    <li data-nav-id="/vi/6-lambda/" title="Testing Guardrail" class="dd-item 
+    <li data-nav-id="/vi/6-lambda/" title="Cấu Hình Lambda" class="dd-item 
         
         
         
         ">
       <a href="/vi/6-lambda/">
-          <b>6. </b>Testing Guardrail
+          <b>6. </b>Cấu Hình Lambda
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.1-scandb/" title="Lấy Dữ Liệu Từ DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.1-scandb/">
+          <b>6.1 </b>Lấy Dữ Liệu Từ DB
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.2-saveimagetos3/" title="Lưu Hình Ảnh Vào S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.2-saveimagetos3/">
+          <b>6.2 </b>Lưu Hình Ảnh Vào S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.3-withtextract/" title="Tương Tác Với Textract" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.3-withtextract/">
+          <b>6.3 </b>Tương Tác Với Textract
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-lambda/6.4-withbedrock/" title="Tương Tác Với Bedrock" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-lambda/6.4-withbedrock/">
+          <b>6.4 </b>Tương Tác Với Bedrock
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -238,13 +362,13 @@
  
   
     
-    <li data-nav-id="/vi/7-api-gateway/" title="Apply Guardrails to Agent" class="dd-item 
+    <li data-nav-id="/vi/7-api-gateway/" title="Cấu Hình API Gateway" class="dd-item 
         
         
         
         ">
       <a href="/vi/7-api-gateway/">
-          <b>7. </b>Apply Guardrails to Agent
+          <b>7. </b>Cấu Hình API Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -264,13 +388,13 @@
  
   
     
-    <li data-nav-id="/vi/8-testing/" title="Test Guardrails with the Agent" class="dd-item 
+    <li data-nav-id="/vi/8-testing/" title="Kiểm Thử Ứng Dụng" class="dd-item 
         
         
         
         ">
       <a href="/vi/8-testing/">
-          <b>8. </b>Test Guardrails with the Agent
+          <b>8. </b>Kiểm Thử Ứng Dụng
           
             <i class="fas fa-check read-icon"></i>
           
@@ -290,13 +414,39 @@
  
   
     
-    <li data-nav-id="/vi/9-delete-source/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/vi/9-delete-source/" title="Dọn Dẹp Tài Nguyên" class="dd-item 
         
         
         
         ">
       <a href="/vi/9-delete-source/">
-          <b>9. </b>Dọn dẹp tài nguyên
+          <b>9. </b>Dọn Dẹp Tài Nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/10-conclusion/" title="Kết Luận" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/10-conclusion/">
+          <b>10. </b>Kết Luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -395,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -403,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -443,7 +593,7 @@
             
           
           
-            <a href='/vi/'>Invoices Serverless</a> > Add filters to Guardrail
+            <a href='/vi/'>Hệ Thống Đọc và Lưu Trữ Hóa Đơn Serverless</a> > Document AI
           
         
           
@@ -454,7 +604,35 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tổng-quan-kiến-trúc">Tổng Quan Kiến Trúc</a></li>
+    <li><a href="#vai-trò-của-amazon-textract">Vai Trò của Amazon Textract</a>
+      <ul>
+        <li><a href="#chức-năng-cốt-lõi">Chức Năng Cốt Lõi</a></li>
+        <li><a href="#lợi-ích-trong-hệ-thống">Lợi Ích Trong Hệ Thống</a></li>
+      </ul>
+    </li>
+    <li><a href="#vai-trò-của-amazon-bedrock">Vai Trò của Amazon Bedrock</a>
+      <ul>
+        <li><a href="#chức-năng-cốt-lõi-1">Chức Năng Cốt Lõi</a></li>
+        <li><a href="#lợi-ích-trong-hệ-thống-1">Lợi Ích Trong Hệ Thống</a></li>
+        <li><a href="#ứng-dụng-trong-xử-lý-hóa-đơn">Ứng Dụng Trong Xử Lý Hóa Đơn</a></li>
+      </ul>
+    </li>
+    <li><a href="#quy-trình-xử-lý-tổng-thể">Quy Trình Xử Lý Tổng Thể</a>
+      <ul>
+        <li><a href="#bước-1-thu-thập-tài-liệu">Bước 1: Thu Thập Tài Liệu</a></li>
+        <li><a href="#bước-2-trích-xuất-dữ-liệu-textract">Bước 2: Trích Xuất Dữ Liệu (Textract)</a></li>
+        <li><a href="#bước-3-phân-tích-thông-minh-bedrock">Bước 3: Phân Tích Thông Minh (Bedrock)</a></li>
+        <li><a href="#bước-4-lưu-trữ-kết-quả">Bước 4: Lưu Trữ Kết Quả</a></li>
+      </ul>
+    </li>
+    <li><a href="#lợi-ích-của-kiến-trúc-serverless">Lợi Ích của Kiến Trúc Serverless</a></li>
+    <li><a href="#tài-liệu-tham-khảo">Tài Liệu Tham Khảo</a></li>
+    <li><a href="#tiếp-tục">Tiếp tục</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -470,7 +648,7 @@
           
             <h1>
               
-              Add filters to Guardrail
+              Document AI
             </h1>
           
 
@@ -478,33 +656,148 @@
 
 
 
-	<ol>
-<li>In this section you can add optional word filters that you do not want in user inputs or the model responses.</li>
-</ol>
-<p>It is recommended to check the <strong>&ldquo;Profanity Filter&rdquo;</strong> to ensure that no abusive words can be used during customer interactions
-<img src="/images/5/WordFilter1.png?width=90pc" alt="WordFilter1"></p>
-<p>Word filters can be used to block specific words and phrases in both input prompts and model responses. These filters are essential for maintaining the integrity, professionalism, and compliance of interactions, especially in sensitive and regulated environments like banking. These can be added manually or uploaded from a list.</p>
-<p>Examples That Can Be Used:</p>
+	<p>Trong phần này, chúng ta sẽ khám phá vai trò của Amazon Textract và Amazon Bedrock trong hệ thống xử lý hóa đơn serverless, cùng với cách Guardrails bảo vệ thông tin nhạy cảm.</p>
+<h2 id="tổng-quan-kiến-trúc">Tổng Quan Kiến Trúc</h2>
+<p>Hệ thống Document AI bao gồm các thành phần chính sau:</p>
 <ul>
-<li>&ldquo;suicide&rdquo;</li>
-<li>&ldquo;self-harm&rdquo;</li>
-<li>&ldquo;terrorist&rdquo;</li>
-<li>&ldquo;illegal&rdquo;</li>
+<li><strong>Amazon S3</strong>: Lưu trữ hóa đơn đầu vào và kết quả xử lý</li>
+<li><strong>AWS Lambda</strong>: Điều phối quy trình xử lý serverless</li>
+<li><strong>Amazon Textract</strong>: Trích xuất dữ liệu từ hóa đơn</li>
+<li><strong>Amazon Bedrock</strong>: Phân tích thông minh và xử lý thông tin</li>
 </ul>
-<p>Add these words and click Next:
-<img src="/images/5/img.png?width=90pc" alt="img"></p>
-<ol start="2">
-<li>Click on Next. We do not have any requirements to define PII so click on next below to reach <strong>Define blocked messaging</strong> section</li>
-</ol>
-<p><img src="/images/5/img_1.png?width=90pc" alt="img_1"></p>
-<ol start="3">
-<li>Enable optional contextual grounding check and set to default</li>
-</ol>
-<p><img src="/images/5/img_2.png?width=90pc" alt="img_2"></p>
-<ol start="4">
-<li>Click on <strong>Next</strong>. Review the information and Click on <strong>Create Guardrail</strong> from the bottom of the page.</li>
-</ol>
-<p><img src="/images/5/FinishCreateGuardrail.gif?width=90pc" alt="FinishCreateGuardrail"></p>
+<h2 id="vai-trò-của-amazon-textract">Vai Trò của Amazon Textract</h2>
+<h3 id="chức-năng-cốt-lõi">Chức Năng Cốt Lõi</h3>
+<p>Amazon Textract là dịch vụ machine learning được quản lý hoàn toàn chuyên dụng cho:</p>
+<p><strong>1. Trích Xuất Văn Bản và Dữ Liệu Có Cấu Trúc</strong></p>
+<ul>
+<li>Nhận dạng và trích xuất văn bản từ hình ảnh và PDF</li>
+<li>Phát hiện các trường dữ liệu có cấu trúc như bảng và biểu mẫu</li>
+<li>Duy trì định dạng và bố cục của tài liệu gốc</li>
+</ul>
+<p><strong>2. Phân Tích Hóa Đơn và Biên Lai (Analyze Expense)</strong></p>
+<ul>
+<li>Tự động xác định các trường chính:
+<ul>
+<li>Tên Nhà Cung Cấp</li>
+<li>Ngày Hóa Đơn</li>
+<li>Tổng Số Tiền</li>
+<li>Số Tiền Thuế</li>
+<li>Chi tiết các mục hàng</li>
+</ul>
+</li>
+<li>Trích xuất thông tin với điểm tin cậy cao</li>
+<li>Hỗ trợ nhiều định dạng hóa đơn khác nhau</li>
+</ul>
+<p><strong>3. Xử Lý Theo Lô và Thời Gian Thực</strong></p>
+<ul>
+<li>Xử lý đồng bộ cho tài liệu nhỏ (&lt; 5MB)</li>
+<li>Xử lý bất đồng bộ cho tài liệu lớn và xử lý theo lô</li>
+<li>Tích hợp trực tiếp với S3 để xử lý tự động</li>
+</ul>
+<h3 id="lợi-ích-trong-hệ-thống">Lợi Ích Trong Hệ Thống</h3>
+<ul>
+<li><strong>Độ Chính Xác Cao</strong>: Sử dụng mô hình deep learning được huấn luyện trên hàng triệu tài liệu</li>
+<li><strong>Không Cần Huấn Luyện</strong>: Mô hình được huấn luyện sẵn và sẵn sàng sử dụng</li>
+<li><strong>Có Thể Mở Rộng</strong>: Tự động mở rộng theo khối lượng công việc</li>
+<li><strong>Tiết Kiệm Chi Phí</strong>: Chỉ trả tiền cho những gì bạn sử dụng</li>
+</ul>
+<h2 id="vai-trò-của-amazon-bedrock">Vai Trò của Amazon Bedrock</h2>
+<h3 id="chức-năng-cốt-lõi-1">Chức Năng Cốt Lõi</h3>
+<p>Amazon Bedrock cung cấp nền tảng để truy cập các mô hình nền tảng thông qua API:</p>
+<p><strong>1. Claude 3 Haiku - Mô Hình Được Chọn</strong></p>
+<ul>
+<li><strong>Tốc Độ Cao</strong>: Thời gian phản hồi nhanh, phù hợp cho xử lý thời gian thực</li>
+<li><strong>Tiết Kiệm Chi Phí</strong>: Chi phí thấp cho xử lý khối lượng lớn</li>
+<li><strong>Hiệu Quả</strong>: Hiệu suất xuất sắc cho các tác vụ phân tích và tóm tắt</li>
+<li><strong>Đa Ngôn Ngữ</strong>: Hỗ trợ tiếng Việt và nhiều ngôn ngữ khác</li>
+</ul>
+<p><strong>2. Phân Tích Thông Minh</strong></p>
+<ul>
+<li><strong>Xác Minh Dữ Liệu</strong>: Xác thực độ chính xác của các giá trị số</li>
+<li><strong>Phân Loại Tự Động</strong>: Phân loại hóa đơn theo loại hàng hóa/dịch vụ</li>
+<li><strong>Phát Hiện Bất Thường</strong>: Xác định các giá trị không hợp lý</li>
+<li><strong>Tóm Tắt Thông Tin</strong>: Tạo tóm tắt có ý nghĩa từ dữ liệu thô</li>
+</ul>
+<p><strong>3. Xử Lý Ngôn Ngữ Tự Nhiên</strong></p>
+<ul>
+<li>Hiểu ngữ cảnh và ý nghĩa của thông tin</li>
+<li>Trả lời câu hỏi về nội dung hóa đơn</li>
+<li>Tạo ra những hiểu biết sâu sắc và khuyến nghị</li>
+<li>Định dạng đầu ra theo yêu cầu (JSON, text, v.v.)</li>
+</ul>
+<h3 id="lợi-ích-trong-hệ-thống-1">Lợi Ích Trong Hệ Thống</h3>
+<ul>
+<li><strong>Serverless</strong>: Không cần quản lý cơ sở hạ tầng</li>
+<li><strong>Dịch Vụ Được Quản Lý</strong>: AWS xử lý cập nhật và bảo trì mô hình</li>
+<li><strong>Tính Khả Dụng Cao</strong>: SLA cao cho khối lượng công việc sản xuất</li>
+<li><strong>Tích Hợp</strong>: Tích hợp dễ dàng với các dịch vụ AWS khác</li>
+</ul>
+<h3 id="ứng-dụng-trong-xử-lý-hóa-đơn">Ứng Dụng Trong Xử Lý Hóa Đơn</h3>
+<ul>
+<li><strong>Bảo Vệ Thông Tin Tài Chính</strong>: Ngăn chặn việc tiết lộ số tài khoản và thông tin thanh toán</li>
+<li><strong>Tuân Thủ Quy Định</strong>: Đảm bảo tuân thủ các quy định</li>
+<li><strong>Bảo Mật Dữ Liệu</strong>: Bảo vệ thông tin khách hàng và nhà cung cấp</li>
+<li><strong>Kiểm Soát Chất Lượng</strong>: Đảm bảo chất lượng và đầu ra phù hợp</li>
+</ul>
+<h2 id="quy-trình-xử-lý-tổng-thể">Quy Trình Xử Lý Tổng Thể</h2>
+<h3 id="bước-1-thu-thập-tài-liệu">Bước 1: Thu Thập Tài Liệu</h3>
+<ul>
+<li>Hóa đơn được tải lên S3</li>
+<li>Hàm Lambda được kích hoạt tự động</li>
+<li>Xác thực và tiền xử lý</li>
+</ul>
+<h3 id="bước-2-trích-xuất-dữ-liệu-textract">Bước 2: Trích Xuất Dữ Liệu (Textract)</h3>
+<ul>
+<li>API analyze_expense của Textract được gọi</li>
+<li>Trích xuất dữ liệu có cấu trúc từ hóa đơn</li>
+<li>Điểm tin cậy cho từng trường</li>
+</ul>
+<h3 id="bước-3-phân-tích-thông-minh-bedrock">Bước 3: Phân Tích Thông Minh (Bedrock)</h3>
+<ul>
+<li>Dữ liệu từ Textract được gửi đến Claude 3 Haiku</li>
+<li>AI phân tích, xác minh và tạo ra những hiểu biết sâu sắc</li>
+<li>Guardrails đảm bảo đầu ra an toàn</li>
+</ul>
+<h3 id="bước-4-lưu-trữ-kết-quả">Bước 4: Lưu Trữ Kết Quả</h3>
+<ul>
+<li>Kết quả được định dạng và lưu trữ</li>
+<li>Metadata và audit trail</li>
+<li>Tích hợp với các hệ thống downstream</li>
+</ul>
+<h2 id="lợi-ích-của-kiến-trúc-serverless">Lợi Ích của Kiến Trúc Serverless</h2>
+<p><strong>1. Khả Năng Mở Rộng</strong></p>
+<ul>
+<li>Tự động mở rộng theo nhu cầu</li>
+<li>Xử lý từ vài hóa đơn đến hàng nghìn mỗi giây</li>
+<li>Không cần lập kế hoạch dung lượng</li>
+</ul>
+<p><strong>2. Tối Ưu Hóa Chi Phí</strong></p>
+<ul>
+<li>Mô hình trả theo sử dụng</li>
+<li>Không có tài nguyên nhàn rỗi</li>
+<li>Quản lý tài nguyên tự động</li>
+</ul>
+<p><strong>3. Độ Tin Cậy</strong></p>
+<ul>
+<li>Khả năng chịu lỗi tích hợp</li>
+<li>Thử lại tự động và xử lý lỗi</li>
+<li>Triển khai đa AZ</li>
+</ul>
+<p><strong>4. Bảo Trì</strong></p>
+<ul>
+<li>Chi phí vận hành tối thiểu</li>
+<li>Cập nhật và vá lỗi tự động</li>
+<li>Tập trung vào logic nghiệp vụ</li>
+</ul>
+<h2 id="tài-liệu-tham-khảo">Tài Liệu Tham Khảo</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/textract/">Tài Liệu Amazon Textract</a></li>
+<li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/">Hướng Dẫn Sử Dụng Amazon Bedrock</a></li>
+<li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-3.html">Hướng Dẫn Mô Hình Claude 3 Haiku</a></li>
+</ul>
+<hr>
+<h2 id="tiếp-tục">Tiếp tục</h2>
+<p><a href="/vi/6-lambda/">6. Hàm Lambda</a></p>
 
 
 
@@ -637,6 +930,88 @@
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -700,10 +1075,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/4-storage-db/" title="Creating Denied Topics"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/4-storage-db/" title="Cấu Hình Lưu Trữ và Cơ Sở Dữ Liệu"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/6-lambda/" title="Testing Guardrail" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/6-lambda/" title="Cấu Hình Lambda" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -713,19 +1088,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819602"></script>
+    <script src="/js/jquery.sticky.js?1754819602"></script>
+    <script src="/js/featherlight.min.js?1754819602"></script>
+    <script src="/js/highlight.pack.js?1754819602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819602"></script>
+    <script src="/js/learn.js?1754819602"></script>
+    <script src="/js/hugo-learn.js?1754819602"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

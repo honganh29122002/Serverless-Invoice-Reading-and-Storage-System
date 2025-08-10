@@ -1,67 +1,36 @@
 +++
-title = "Testing Guardrail"
+title = "Cấu Hình Lambda"
 date = 2020-05-14T00:38:32+07:00
 weight = 6
 chapter = false
 pre = "<b>6. </b>"
 +++
 
-Let us now test our created Guardrail to see how well it is working and if it is meeting Stellar Bank’s requirements:
+Phần này bao gồm việc cấu hình và triển khai các hàm serverless để cung cấp năng lượng cho quy trình xử lý tài liệu.
 
-Click on **Bedrock → Guardrails** and choose the Guardrail created
-![img](/images/6/img.png?width=90pc)
+## Tổng Quan
 
-You will see a screen similar to the below
-![img_1](/images/6/img_1.png?width=90pc)
+Ứng dụng sử dụng nhiều hàm Lambda để xử lý các khía cạnh khác nhau của pipeline xử lý hóa đơn:
 
-By default, the working draft of the guardrail is used in the test window. To test a different version of the guardrail, choose Working draft at the top of the test window and then select the version.
+- **Database Scanner**: Truy xuất và quản lý dữ liệu từ DynamoDB
+- **Image Upload Handler**: Xử lý việc tải file lên S3
+- **Textract Integration**: Trích xuất dữ liệu từ tài liệu hóa đơn
+- **Bedrock Integration**: Cung cấp phân tích và hiểu biết sâu sắc được hỗ trợ bởi AI
 
-To select a model, choose **Select model**. You can choose any model that you enabled at the start of the workshop. After you make a choice, select **Apply**. To change the model, choose **Change**.
-![img_2](/images/6/img_2.png?width=90pc)
+## Kiến Trúc Hàm
 
-Enter the following prompts in the Prompt and click **Run** to see what responses are generated
+Mỗi hàm Lambda được thiết kế với các trách nhiệm cụ thể để duy trì sự tách biệt các mối quan tâm và tối ưu hóa hiệu suất. Các hàm hoạt động cùng nhau để tạo ra một pipeline xử lý serverless hoàn chỉnh có thể tự động mở rộng dựa trên nhu cầu.
 
-### Financial Advice
+---
 
-**Promp:** "Can you suggest some good stocks to invest in right now?"
-![img_3](/images/6/img_3.png?width=90pc)
+## Tiếp tục
 
-The model returns a response in the Final response box (that may be modified by the guardrail).
+[7. API Gateway](../7-api-gateway/)
 
-If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-![img_4](/images/6/img_4.png?width=90pc)
+---
 
-To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select **View trace**. We can see that our Financial Advice Guardrail was activated to stop this topic from being discussed.
+## Tài Liệu Tham Khảo
 
-Use the **Prompt** and **Model response** tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-![img_5](/images/6/img_5.png?width=90pc)
-
-### Political Opinions:
-
-**Prompt:** "What's your stance on the current government policies?"
-![img_6](/images/6/img_6.png?width=90pc)
-
-The model returns a response in the Final response box (that may be modified by the guardrail).
-
-If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-![img_7](/images/6/img_7.png?width=90pc)
-
-To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select **View trace**. We can see that our Political Advice Guardrail was activated to stop this topic from being discussed.
-
-Use the **Prompt** and **Model response** tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-![img_8](/images/6/img_8.png?width=90pc)
-
-### Medical Advice:
-
-**Prompt:** "What should I do to manage my stress levels due to financial issues?"
-![img_9](/images/6/img_9.png?width=90pc)
-
-The model returns a response in the Final response box (that may be modified by the guardrail).
-
-If the guardrail blocks or filters the prompt or model response, a message appears under Guardrail check that informs you how many violations the guardrail detected.
-![img_10](/images/6/img_10.png?width=90pc)
-
-To view the topics or harmful categories in the prompt or response that were recognized and allowed past the filter or blocked by it, select **View trace**. We can see that our Medical Advice Guardrail was activated to stop this topic from being discussed.
-
-Use the **Prompt** and **Model response** tabs to view the topics or harmful categories that were filtered or blocked by the guardrail.
-![img_11](/images/6/img_11.png?width=90pc)
+- [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/)
+- [Lambda Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)
+- [Serverless Architecture Patterns](https://aws.amazon.com/serverless/patterns/)

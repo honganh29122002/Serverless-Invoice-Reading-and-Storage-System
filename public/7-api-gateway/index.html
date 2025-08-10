@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>API Gateway Configuration :: Amazon Bedrock Guardrails</title>
+    <title>API Gateway Configuration :: Serverless Invoice Reading and Storage System</title>
 
     
-    <link href="/css/nucleus.css?1754751519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754751519" rel="stylesheet">
-    <link href="/css/hybrid.css?1754751519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754751519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754751519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754751519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754751519" rel="stylesheet">
-    <link href="/css/theme.css?1754751519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754751519" rel="stylesheet">
+    <link href="/css/nucleus.css?1754819602" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754819602" rel="stylesheet">
+    <link href="/css/hybrid.css?1754819602" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754819602" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754819602" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754819602" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754819602" rel="stylesheet">
+    <link href="/css/theme.css?1754819602" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754819602" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754751519" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754819602" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754751519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754819602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754751519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754751519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754819602"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754819602"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754751519"></script>
+<script type="text/javascript" src="/js/search.js?1754819602"></script>
 
     
   </div>
@@ -432,6 +432,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10-conclusion/">
+          <b>10. </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -519,7 +545,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>17/01/2025</font></i>
+        <i><font color=orange>10/08/2025</font></i>
     </left>
     <left>
         <br>
@@ -527,7 +553,7 @@
             <b> Team </b> <br>
            
             <i>
-                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+                <a href="#"  style="color:orange">Le Hong Anh</a>
         </i>
         </left>
 
@@ -599,6 +625,7 @@
         <li><a href="#monitoring">Monitoring</a></li>
       </ul>
     </li>
+    <li><a href="#continue-to">Continue to</a></li>
   </ul>
 </nav>
     </div>
@@ -665,22 +692,24 @@
 <p>Create new API</p>
 <ul>
 <li>Select <strong>REST API</strong></li>
-<li>Enter <strong>API name</strong></li>
 </ul>
-<p><img src="/images/7/api2.png?width=90pc" alt="api2">
-<img src="/images/7/api3.png?width=90pc" alt="api3"></p>
+<p><img src="/images/7/api2.png?width=90pc" alt="api2"></p>
+<ul>
+<li>Enter <strong>API name</strong> and <strong>Create</strong>
+<img src="/images/7/api3.png?width=90pc" alt="api3"></li>
+</ul>
 </li>
 </ol>
 <h4 id="step-2-create-upload-resource">Step 2: Create Upload Resource</h4>
 <ol>
 <li>
 <p>Create new <strong>resource</strong></p>
+<p><img src="/images/7/api4.png?width=90pc" alt="api4"></p>
 <ul>
 <li><strong>Resource name</strong>: Enter descriptive name</li>
 <li><strong>Enable CORS</strong>: Check this option</li>
 </ul>
-<p><img src="/images/7/api4.png?width=90pc" alt="api4">
-<img src="/images/7/api5.png?width=90pc" alt="api5"></p>
+<p><img src="/images/7/api5.png?width=90pc" alt="api5"></p>
 </li>
 </ol>
 <h4 id="step-3-create-dynamic-path-resource">Step 3: Create Dynamic Path Resource</h4>
@@ -698,13 +727,13 @@
 <ol>
 <li>
 <p>Create method for file upload</p>
+<p><img src="/images/7/api7.png?width=90pc" alt="api7"></p>
 <ul>
 <li><strong>Method type</strong>: POST</li>
 <li><strong>Lambda Proxy Integration</strong>: Enable</li>
 <li><strong>Lambda function</strong>: Select S3 upload handler function</li>
 </ul>
-<p><img src="/images/7/api7.png?width=90pc" alt="api7">
-<img src="/images/7/api8.png?width=90pc" alt="api8"></p>
+<p><img src="/images/7/api8.png?width=90pc" alt="api8"></p>
 </li>
 </ol>
 <h4 id="step-5-configure-response-headers">Step 5: Configure Response Headers</h4>
@@ -722,10 +751,10 @@
 <ol>
 <li>
 <p>Access <strong>API settings</strong></p>
+<p><img src="/images/7/api10.png?width=90pc" alt="api10"></p>
 </li>
 <li>
-<p>Add <strong>media type</strong> for file uploads</p>
-<p><img src="/images/7/api10.png?width=90pc" alt="api10">
+<p>Add <strong>media type</strong> for file uploads
 <img src="/images/7/api11.png?width=90pc" alt="api11"></p>
 </li>
 </ol>
@@ -734,35 +763,36 @@
 <ol>
 <li>
 <p>Create new resource for data retrieval</p>
+<p><img src="/images/7/api12.png?width=90pc" alt="api12"></p>
 <ul>
 <li><strong>Resource name</strong>: <code>view-all</code></li>
 <li><strong>Enable CORS</strong>: Check this option</li>
+<li><strong>Create</strong>
+<img src="/images/7/api13.png?width=90pc" alt="api13"></li>
 </ul>
-<p><img src="/images/7/api12.png?width=90pc" alt="api12">
-<img src="/images/7/api13.png?width=90pc" alt="api13"></p>
 </li>
 </ol>
 <h4 id="step-2-configure-get-method">Step 2: Configure GET Method</h4>
 <ol>
 <li>
 <p>Create method for data retrieval</p>
+<p><img src="/images/7/api14.png?width=90pc" alt="api14"></p>
 <ul>
 <li><strong>Method type</strong>: GET</li>
 <li><strong>Lambda Proxy Integration</strong>: Enable</li>
 <li><strong>Lambda function</strong>: Select DynamoDB scanner function</li>
 </ul>
-<p><img src="/images/7/api14.png?width=90pc" alt="api14">
-<img src="/images/7/api15.png?width=90pc" alt="api15"></p>
+<p><img src="/images/7/api15.png?width=90pc" alt="api15"></p>
 </li>
 </ol>
 <h4 id="step-3-deploy-api">Step 3: Deploy API</h4>
 <ol>
 <li>
 <p>Deploy the API to make it accessible</p>
+<p><img src="/images/7/api16.png?width=90pc" alt="api16"></p>
 </li>
 <li>
-<p><strong>Important</strong>: Save the deployment URL for frontend integration</p>
-<p><img src="/images/7/api16.png?width=90pc" alt="api16">
+<p><strong>Important</strong>: Save the deployment URL for frontend integration
 <img src="/images/7/api17.png?width=90pc" alt="api17"></p>
 </li>
 </ol>
@@ -785,6 +815,9 @@
 <li>Configure alarms for error rates and latency</li>
 <li>Use AWS X-Ray for distributed tracing</li>
 </ul>
+<hr>
+<h2 id="continue-to">Continue to</h2>
+<p><a href="/8-testing/">8. Testing</a></p>
 
 
 
@@ -1037,6 +1070,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -1059,19 +1108,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754751519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754751519"></script>
-    <script src="/js/jquery.sticky.js?1754751519"></script>
-    <script src="/js/featherlight.min.js?1754751519"></script>
-    <script src="/js/highlight.pack.js?1754751519"></script>
+    <script src="/js/clipboard.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754819602"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754819602"></script>
+    <script src="/js/jquery.sticky.js?1754819602"></script>
+    <script src="/js/featherlight.min.js?1754819602"></script>
+    <script src="/js/highlight.pack.js?1754819602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754751519"></script>
-    <script src="/js/learn.js?1754751519"></script>
-    <script src="/js/hugo-learn.js?1754751519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754819602"></script>
+    <script src="/js/learn.js?1754819602"></script>
+    <script src="/js/hugo-learn.js?1754819602"></script>
 
-    <link href="/mermaid/mermaid.css?1754751519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754751519"></script>
+    <link href="/mermaid/mermaid.css?1754819602" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754819602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

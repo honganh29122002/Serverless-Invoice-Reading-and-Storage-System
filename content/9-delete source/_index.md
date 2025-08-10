@@ -63,11 +63,11 @@ This section provides a comprehensive guide for cleaning up all AWS resources cr
   2. **Empty the bucket first**:
      - Select bucket → **Empty**
      - Type "permanently delete" to confirm
+  ![cl2](/images/9/cl2.png?width=90pc)
   3. **Delete the bucket**:
      - Select bucket → **Delete**
-     - Type bucket name to confirm
-  ![cl2](/images/9/cl2.png?width=90pc)
   ![cl2](/images/9/cl2-.png?width=90pc)
+     - Type bucket name to confirm and **delete bucket**
   ![cl2](/images/9/cl2--.png?width=90pc)
   
 
@@ -105,3 +105,17 @@ This section provides a comprehensive guide for cleaning up all AWS resources cr
 ---
 
 **Important**: Double-check all deletions before confirming. Resource deletion is typically irreversible and may result in permanent data loss.
+
+---
+
+## Continue to
+
+[10. Conclusion](../10-conclusion/)
+
+---
+
+## References
+
+- [AWS Resource Cleanup Best Practices](https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-pillar/decommission-resources.html)
+- [AWS Cost Management](https://aws.amazon.com/aws-cost-management/)
+- [AWS Billing and Cost Management User Guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)

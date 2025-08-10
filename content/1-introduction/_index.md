@@ -36,3 +36,17 @@ By completing this workshop, you will be equipped with the knowledge and skills 
 ![architecture](/images/1/architecture.png?width=90pc)
 
 The workshop demonstrates a complete serverless invoice processing system that combines frontend hosting, user authentication, document processing, and AI-powered analysis in a secure and scalable manner.
+
+---
+
+## Continue to
+
+[2. Frontend](../2-frontend/)
+
+---
+
+## References
+
+- [AWS Serverless Application Lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/)
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
+- [Serverless Computing with AWS](https://aws.amazon.com/serverless/)
